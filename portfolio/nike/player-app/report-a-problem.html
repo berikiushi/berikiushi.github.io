@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nike</title>
+  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="sub-header sub-header_logged-in">
+      <div class="sub-header__left">
+        <a href="#" class="sub-logo">
+          <img src="./img/sub-logo.svg" alt="Logo">
+        </a>
+        <a href="#" class="sub-header__text sub-header_problem-report-link">problem report</a>
+        <a href="#" class="sub-header__text sub-header_new-game-link">new game</a>
+      </div>
+      <div class="sub-header__center">
+        <a href="#" class="sub-header__text">games</a>
+        <a href="#" class="sub-header__text">instructions</a>
+        <a href="#" class="sub-header__text">gear up</a>
+      </div>
+      <div class="sub-header__right">
+        <a href="#" class="user">
+          <span class="user__icon"></span>
+          <span class="user__name">
+            <span class="user__firstname">konstantin</span>
+            <span class="user__lastname">konstantinopolsky</span>
+          </span>
+        </a>
+        <button class="ui-btn ui-btn--leave">leave k11</button>
+      </div>
+    </header>
+<!-- start content -->
+<main class="main">
+  <div class="container-center">
+    <div class="ui-overlay"></div>
+    <div class="ui-modal ui-modal--bw">
+      <button class="ui-modal__close ui-modal__close--min"><i class="ui-icon-close-min-black"></i></button>
+      <h1 class="ui-heading-min">problem report</h1>
+      <div class="ui-form-wrapper">
+        <div class="ui-form-row">
+          <div class="ui-form-field">
+            <div class="ui-form-field__label-bw">your name</div>
+            <input type="text" name="name" class="ui-form-field__input-bw">
+          </div>
+          <div class="ui-form-field">
+            <div class="ui-form-field__label-bw">e-mail</div>
+            <input type="email" name="mail" class="ui-form-field__input-bw">
+          </div>
+          <div class="ui-form-field">
+            <div class="ui-form-field__label-bw">contact phone</div>
+            <input type="tel" name="phone" class="ui-form-field__input-bw">
+          </div>
+        </div>
+        <div class="ui-form-field">
+          <div class="ui-form-field__label-bw">tell us about the problem</div>
+          <textarea name="body" class="ui-form-field__area-bw"></textarea>
+        </div>
+        <div class="ui-btn-wrapper-bw">
+          <button class="ui-btn ui-btn--abort-bw">cancel</button>
+          <button class="ui-btn ui-btn--accept-bw">send report</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!-- end content -->
+    <footer class="progress-footer">
+      <div class="progress-footer__inner">
+        <ul>
+          <li class="">select the game</li>
+          <li class="progress-footer_unfulfilled">select videos <span>0 / 3</span></li>
+          <li class="progress-footer_unfulfilled">edit videos <span>0 / 3</span></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

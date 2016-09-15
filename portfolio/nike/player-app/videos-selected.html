@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nike</title>
+  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="sub-header sub-header_logged-in">
+      <div class="sub-header__left">
+        <a href="#" class="sub-logo">
+          <img src="./img/sub-logo.svg" alt="Logo">
+        </a>
+        <a href="#" class="sub-header__text sub-header_problem-report-link">problem report</a>
+        <a href="#" class="sub-header__text sub-header_new-game-link">new game</a>
+      </div>
+      <div class="sub-header__center">
+        <a href="#" class="sub-header__text">games</a>
+        <a href="#" class="sub-header__text">instructions</a>
+        <a href="#" class="sub-header__text">gear up</a>
+      </div>
+      <div class="sub-header__right">
+        <a href="#" class="user">
+          <span class="user__icon"></span>
+          <span class="user__name">
+            <span class="user__firstname">konstantin</span>
+            <span class="user__lastname">konstantinopolsky</span>
+          </span>
+        </a>
+        <button class="ui-btn ui-btn--leave">leave k11</button>
+      </div>
+    </header>
+<!-- start content -->
+<main class="main main_bg-games">
+    <div class="container-1280 editor">
+        <div class="editor__header">
+            <div class="editor__header-sec">
+                <div class="ui-btn-wrapper">
+                    <button class="ui-btn ui-btn--reset">reset selection</button>
+                    <button class="ui-btn ui-btn--aux">show all</button>
+                </div>
+            </div>
+            <div class="editor__header-sec">
+                <div class="ui-heading-line">
+                  <h1 class="ui-heading">videos are selected</h1>
+                </div>
+                <p>click "continue" <br> to edit selected videos</p>
+            </div>
+            <div class="editor__header-sec">
+                <button class="ui-btn ui-btn--aux">continue</button>
+            </div>
+        </div>
+
+        <div class="editor__videos">
+          <div class="editor__video">
+              <img src="./img/video.jpg"/>
+              <div class="ui-board">
+                  <div class="ui-board__header">момент</div>
+                  <div class="ui-board__time">00:10:12  –  00:12:22</div>
+                  <i class="ui-icon-check"></i>
+              </div>
+              <div class="ui-video-controls-wrapper">
+                  <div class="ui-video-controls">
+                      <div class="ui-toggle"></div>
+                      <div class="ui-progress-bar"></div>
+                  </div>
+                  <div class="ui-action-wrapper--abs">
+                      <button class="ui-btn ui-btn--edit-inactive">selected</button>
+                  </div>
+              </div>
+          </div>
+            <div class="editor__video">
+                <img src="./img/video.jpg"/>
+                <div class="ui-board">
+                    <div class="ui-board__header">момент</div>
+                    <div class="ui-board__time">00:10:12  –  00:12:22</div>
+                    <i class="ui-icon-check"></i>
+                </div>
+                <div class="ui-video-controls-wrapper">
+                    <div class="ui-video-controls">
+                        <div class="ui-toggle"></div>
+                        <div class="ui-progress-bar"></div>
+                    </div>
+                    <div class="ui-action-wrapper--abs">
+                        <button class="ui-btn ui-btn--edit-inactive">selected</button>
+                    </div>
+                </div>
+            </div>
+            <div class="editor__video">
+                <img src="./img/video.jpg"/>
+                <div class="ui-board">
+                    <div class="ui-board__header">момент</div>
+                    <div class="ui-board__time">00:10:12  –  00:12:22</div>
+                    <i class="ui-icon-check"></i>
+                </div>
+                <div class="ui-video-controls-wrapper">
+                    <div class="ui-video-controls">
+                        <div class="ui-toggle"></div>
+                        <div class="ui-progress-bar"></div>
+                    </div>
+                    <div class="ui-action-wrapper--abs">
+                        <button class="ui-btn ui-btn--edit-inactive">selected</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+<!-- end content -->
+    <footer class="progress-footer">
+      <div class="progress-footer__inner">
+        <ul>
+          <li class="">select the game</li>
+          <li class="progress-footer_unfulfilled">select videos <span>0 / 3</span></li>
+          <li class="progress-footer_unfulfilled">edit videos <span>0 / 3</span></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

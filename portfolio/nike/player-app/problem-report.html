@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nike</title>
+  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="sub-header sub-header_logged-in">
+      <div class="sub-header__left">
+        <a href="#" class="sub-logo">
+          <img src="./img/sub-logo.svg" alt="Logo">
+        </a>
+        <a href="#" class="sub-header__text sub-header_problem-report-link">problem report</a>
+        <a href="#" class="sub-header__text sub-header_new-game-link">new game</a>
+      </div>
+      <div class="sub-header__center">
+        <a href="#" class="sub-header__text">games</a>
+        <a href="#" class="sub-header__text">instructions</a>
+        <a href="#" class="sub-header__text">gear up</a>
+      </div>
+      <div class="sub-header__right">
+        <a href="#" class="user">
+          <span class="user__icon"></span>
+          <span class="user__name">
+            <span class="user__firstname">konstantin</span>
+            <span class="user__lastname">konstantinopolsky</span>
+          </span>
+        </a>
+        <button class="ui-btn ui-btn--leave">leave k11</button>
+      </div>
+    </header>
+<!-- start content -->
+<main class="main main_light main_bg-games">
+  <div class="ui-overlay"></div>
+  <div class="ui-modal-container">
+    <div class="ui-modal ui-modal--md">
+      <button class="ui-close">
+        <div class="ui-icon-close-big"></div>
+      </button>
+      <div class="ui-heading-line">
+        <h1 class="ui-heading ui-heading--black">problem <br> report</h1>
+      </div>
+      <div class="ui-form-wrapper">
+        <div class="ui-form-row">
+          <div class="ui-form-field">
+            <div class="ui-form-field__label">your name</div>
+            <input type="text" name="name" class="ui-form-field__input">
+          </div>
+          <div class="ui-form-field">
+            <div class="ui-form-field__label">e-mail</div>
+            <input type="email" name="mail" class="ui-form-field__input">
+          </div>
+          <div class="ui-form-field">
+            <div class="ui-form-field__label">contact phone</div>
+            <input type="tel" name="phone" class="ui-form-field__input">
+          </div>
+        </div>
+        <div class="ui-form-field">
+          <textarea name="body" class="ui-form-field__area"></textarea>
+          <div class="ui-form-field__label">tell us about the problem</div>
+        </div>
+        <div class="ui-btn-wrapper">
+          <button class="ui-btn ui-btn--abort">cancel</button>
+          <button class="ui-btn ui-btn--accept">send report</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container-grid cf">
+        <div class="text-stars">select the game</div>
+        <div class="games">
+            <div class="games__block">
+                <div class="games__date">21 / 06 | 12:30
+                    <br> @ korobka chistye prudy</div>
+                <div class="games__players">cannibals
+                    <br><i class="ui-icon-close-black"></i>
+                    <br> monsters</div>
+                <button class="ui-btn ui-btn--accept">select videos</button>
+            </div>
+            <div class="games__block games__block--select">
+                <div class="games__date games__date--select">21 / 06 | 12:30
+                    <br> @ korobka chistye prudy or bigger title so doge so cool such white on so red</div>
+                <div class="games__players games__players--select">super mega long title
+                    <br><i class="ui-icon-close-white"></i>
+                    <br> another crazy big title</div><i class="ui-icon-check-white"></i>
+            </div>
+            <div class="games__block games__block--wait">
+                <div class="games__date">21 / 06 | 12:30
+                    <br> @ korobka chistye prudy</div>
+                <div class="games__players games__players--wait">cannibals
+                    <br><i class="ui-icon-close-gray"></i>
+                    <br> monsters</div><span>moderation in progress</span>
+            </div>
+            <div class="games__block">
+                <div class="games__date">21 / 06 | 12:30
+                    <br> @ korobka chistye prudy</div>
+                <div class="games__players">cannibals
+                    <br><i class="ui-icon-close-black"></i>
+                    <br> monsters</div>
+                <button class="ui-btn ui-btn--accept">select videos</button>
+            </div>
+            <div class="games__block games__block--select">
+                <div class="games__date games__date--select">21 / 06 | 12:30
+                    <br> @ korobka chistye prudy or bigger title so doge so cool such white on so red</div>
+                <div class="games__players games__players--select">super mega long title
+                    <br><i class="ui-icon-close-white"></i>
+                    <br> another crazy big title</div><i class="ui-icon-check-white"></i>
+            </div>
+            <div class="games__block">
+                <div class="games__date">21 / 06 | 12:30
+                    <br> @ korobka chistye prudy</div>
+                <div class="games__players">cannibals
+                    <br><i class="ui-icon-close-black"></i>
+                    <br> monsters</div>
+                <button class="ui-btn ui-btn--accept">select videos</button>
+            </div>
+            <div class="games__block">
+                <div class="games__date">21 / 06 | 12:30
+                    <br> @ korobka chistye prudy</div>
+                <div class="games__players">cannibals
+                    <br><i class="ui-icon-close-black"></i>
+                    <br> monsters</div>
+                <button class="ui-btn ui-btn--accept">select videos</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<!-- end content -->
+    <footer class="progress-footer">
+      <div class="progress-footer__inner">
+        <ul>
+          <li class="">select the game</li>
+          <li class="progress-footer_unfulfilled">select videos <span>0 / 3</span></li>
+          <li class="progress-footer_unfulfilled">edit videos <span>0 / 3</span></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

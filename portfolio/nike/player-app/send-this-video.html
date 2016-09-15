@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nike</title>
+  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="sub-header sub-header_logged-in">
+      <div class="sub-header__left">
+        <a href="#" class="sub-logo">
+          <img src="./img/sub-logo.svg" alt="Logo">
+        </a>
+        <a href="#" class="sub-header__text sub-header_problem-report-link">problem report</a>
+        <a href="#" class="sub-header__text sub-header_new-game-link">new game</a>
+      </div>
+      <div class="sub-header__center">
+        <a href="#" class="sub-header__text">games</a>
+        <a href="#" class="sub-header__text">instructions</a>
+        <a href="#" class="sub-header__text">gear up</a>
+      </div>
+      <div class="sub-header__right">
+        <a href="#" class="user">
+          <span class="user__icon"></span>
+          <span class="user__name">
+            <span class="user__firstname">konstantin</span>
+            <span class="user__lastname">konstantinopolsky</span>
+          </span>
+        </a>
+        <button class="ui-btn ui-btn--leave">leave k11</button>
+      </div>
+    </header>
+<!-- start content -->
+<main class="main">
+    <div class="ui-overlay"></div>
+    <div class="ui-modal-container">
+      <div class="ui-modal ui-modal--sm">
+        <button class="ui-close">
+          <div class="ui-icon-close-big"></div>
+        </button>
+        <div class="ui-heading-line">
+          <h1 class="ui-heading ui-heading--black">send this <br> videos?</h1>
+        </div>
+        <div class="ui-btn-wrapper">
+          <button class="ui-btn ui-btn--abort-fill">no</button>
+          <button class="ui-btn ui-btn--aux">yes</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-dark editor">
+        <div class="editor__header">
+            <button class="ui-btn ui-btn--abort-dark">don't send</button>
+            <div class="ui-heading">ready to send</div>
+            <button class="ui-btn ui-btn--accept">send videos</button>
+        </div>
+        <div class="editor__videos">
+            <div class="editor__video"><img src="./img/video.jpg">
+                <div class="ui-video-controls-wrapper">
+                  <div class="ui-video-controls">
+                    <button class="ui-toggle ui-toggle--pause"></button>
+                    <div class="ui-progress-bar"></div>
+                  </div>
+                  <div class="ui-action-wrapper">
+                    <button class="ui-btn ui-btn--edit">edit</button>
+                  </div>
+                </div>
+            </div>
+            <div class="editor__video"><img src="./img/video.jpg">
+              <div class="ui-video-controls-wrapper">
+                <div class="ui-video-controls">
+                  <button class="ui-toggle"></button>
+                </div>
+                <div class="ui-action-wrapper">
+                  <button class="ui-btn ui-btn--edit">edit</button>
+                </div>
+              </div>
+            </div>
+            <div class="editor__video"><img src="./img/video.jpg">
+              <div class="ui-video-controls-wrapper">
+                <div class="ui-video-controls">
+                  <button class="ui-toggle"></button>
+                </div>
+                <div class="ui-action-wrapper">
+                  <button class="ui-btn ui-btn--edit">edit</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<!-- end content -->
+    <footer class="progress-footer">
+      <div class="progress-footer__inner">
+        <ul>
+          <li class="">select the game</li>
+          <li class="progress-footer_unfulfilled">select videos <span>0 / 3</span></li>
+          <li class="progress-footer_unfulfilled">edit videos <span>0 / 3</span></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

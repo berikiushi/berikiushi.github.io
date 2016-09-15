@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nike</title>
+  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="sub-header sub-header_logged-in">
+      <div class="sub-header__left">
+        <a href="#" class="sub-logo">
+          <img src="./img/sub-logo.svg" alt="Logo">
+        </a>
+        <a href="#" class="sub-header__text sub-header_problem-report-link">problem report</a>
+        <a href="#" class="sub-header__text sub-header_new-game-link">new game</a>
+      </div>
+      <div class="sub-header__center">
+        <a href="#" class="sub-header__text">games</a>
+        <a href="#" class="sub-header__text">instructions</a>
+        <a href="#" class="sub-header__text">gear up</a>
+      </div>
+      <div class="sub-header__right">
+        <a href="#" class="user">
+          <span class="user__icon"></span>
+          <span class="user__name">
+            <span class="user__firstname">konstantin</span>
+            <span class="user__lastname">konstantinopolsky</span>
+          </span>
+        </a>
+        <button class="ui-btn ui-btn--leave">leave k11</button>
+      </div>
+    </header>
+<!-- start content -->
+<main class="main main_bg-welcome">
+  <div class="container-center">
+    <div class="welcome">
+      <div class="welcome__logo"></div>
+      <!-- <input type="text" name="name" placeholder="e-mail" class="ui-form-field__input ui-form-field__input--util is-error"> -->
+      <input type="text" name="name" placeholder="e-mail" class="ui-form-field__input ui-form-field__input--util">
+      <input type="text" name="name" placeholder="code" class="ui-form-field__input ui-form-field__input--util">
+      <div class="welcome__btns">
+        <!-- <button class="ui-btn ui-btn--accept">try again</button> -->
+        <button class="ui-btn ui-btn--aux">log in</button>
+        <a class="ui-btn ui-btn--restore" href="#"><b>restore code</b></a>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!-- end content -->
+    <footer class="progress-footer">
+      <div class="progress-footer__inner">
+        <ul>
+          <li class="">select the game</li>
+          <li class="progress-footer_unfulfilled">select videos <span>0 / 3</span></li>
+          <li class="progress-footer_unfulfilled">edit videos <span>0 / 3</span></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
