@@ -516,15 +516,7 @@ ul ul {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.container:before,
-.container:after {
   display: table;
-  content: "";
-}
-.container:after {
-  clear: both;
 }
 
 @media (min-width: 768px) {
