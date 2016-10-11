@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Armata);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+body {
+  background-image: url('https://monosnap.com/file/aHfOInJB5JhAy09q5XiWsDCzcEsnCm.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  font-family: 'Armata', sans-serif;
+}
+b {
+  font-weight: 400;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  color: #fff;
+  font-size: 64px;
+  animation: loader 1.5s ease-in-out infinite;
+}
+@keyframes loader {
+  50% { opacity: 0.1 }
+  100% { opacity: 1 }
+}
+
+
+.weather {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 650px;
+  height: 450px;
+  color: #f2f8fa;
+  background-color: rgba(45, 102, 184, 0.7);
+  border-top: 1px solid #75C7D3;
+  border-radius: 12px;
+}
+.weather-date {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: rgba(83, 152, 191, 0.5);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.weather-temp {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  font-size: 112px;
+}
+
+
+.weather-condition,
+.weather-advance {
+  position: absolute;
+  top: 210px;
+  font-size: 16px;
+  font-family: 'verdana', sans-serif;
+}
+.weather-condition p,
+.weather-advance p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.weather-condition i,
+.weather-advance i {
+  position: relative;
+  width: 24px;
+  text-align: center;
+  margin-right: 5px;
+}
+.weather-condition {
+  right: 20px;
+}
+.weather-advance {
+  right: 196px;
+}
+
+ul.weather-days {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  color: #49555D;
+}
+.weather-days li {
+  display: block;
+  box-sizing: content-box;
+  float: left;
+  width: 130px;
+  height: 172px;
+  margin: 0;
+  background-color: #F2F8FA;
+  font-size: 24px;
+  text-align: center;
+  box-shadow: -1px 0px 0px 0px #D4E8FD;
+}
+.weather-days li:first-child {
+  border-radius: 0 0 0 12px;
+  box-shadow: none;
+}
+.weather-days li:last-child {
+  border-radius: 0 0 12px 0;
+}
+.weather-days p {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: 'Armata', sans-serif;
+}
+.weather-days p ~ p::after {
+  content: '\f042';
+  font-family: weathericons;
+}
+.weather-days i {
+  font-size: 52px;
+}
+
+
+/*
+  ================== watch ==================
+*/
+.watch > div,
+.watch > div::before,
+.watch > div::after {
+  position: absolute;
+  box-sizing: content-box;
+}
+.watch {
+  position: relative;
+  top: -80px;
+  left: -35px;
+  width: 312px;
+  height: 312px;
+  background: linear-gradient(to bottom, #feffff 0%, #a3b7bb 100%);
+  border-radius: 156px;
+}
+.watch-case {
+  top: 10px;
+  left: 10px;
+  width: 288px;
+  height: 288px;
+  border: 2px solid #fff;
+  background: linear-gradient(to bottom, #a8c0c4 0%, #eef9fe 100%);
+  border-radius: 144px;
+}
+.watch-face {
+  top: 26px;
+  left: 26px;
+  width: 260px;
+  height: 260px;
+  background: linear-gradient(to bottom, #1e2e3a 0%, #253a48 100%);
+  border-radius: 130px;
+  box-shadow: 15px 15px 10px 0 #1e2e3a inset;
+}
+.watch-dial-outline {
+  top: 58px;
+  left: 58px;
+  width: 197px;
+  height: 197px;
+  overflow: hidden;
+}
+.watch-dial-outline::before {
+  display: block;
+  content: '';
+  width: 202px;
+  height: 202px;
+  margin-top: -3px;
+  margin-left: -3px;
+  border: 1px solid #3e617a;
+  border-radius: 101px;
+}
+.watch-dial {
+  width: 40px;
+  height: 40px;
+  color: #3e617a;
+  font-size: 32px;
+}
+.watch-dial.num3-6::before {
+  content: '3';
+  top: 137px;
+  left: 247px;
+}
+.watch-dial.num3-6::after {
+  content: '6';
+  top: 238px;
+  left: 146px;
+}
+.watch-dial.num9-12::before {
+  content: '9';
+  top: 137px;
+  left: 46px;
+}
+.watch-dial.num9-12::after {
+  content: '12';
+  top: 37px;
+  left: 138px;
+}
+.watch-hour {
+  top: 76px;
+  left: 146px;
+  width: 20px;
+  height: 80px;
+  background: linear-gradient(to bottom, #fcfcfc 0%, #b4b9bd 100%);
+  border-radius: 20px;
+  transform-origin: 10px 100%;
+}
+.watch-minute {
+  top: 36px;
+  left: 150px;
+  width: 12px;
+  height: 120px;
+  background: linear-gradient(to bottom, #fbfbfb 0%, #61717c 100%);
+  border-radius: 12px;
+  transform-origin: 6px 100%;
+}
+.watch-second {
+  top: 36px;
+  left: 154px;
+  width: 4px;
+  height: 120px;
+  background: #eee;
+  border-radius: 4px;
+  transform-origin: 2px 100%;
+  transition: transform 0.2s cubic-bezier(.4, 2.08, .55, .44);
+}
+.watch-cap {
+  top: 135px;
+  left: 135px;
+  width: 42px;
+  height: 42px;
+  background: #fefefe;
+  border-radius: 42px;
+}
+.watch-cap-in {
+  top: 145px;
+  left: 145px;
+  width: 22px;
+  height: 22px;
+  background: #49555d;
+  border-radius: 22px;
+}
+
+
+.inspired {
+  position: absolute;
+  width: 650px;
+  bottom: -25px;
+  font-size: 12px;
+  text-align: center;
+}
+.inspired a {
+  color: #fff;
+}
+.inspired a:hover {
+  text-decoration: none;
+}

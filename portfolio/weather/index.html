@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>weather</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="loader wi wi-thermometer"></div>
+    <div class="weather">
+      <div class="weather-date"><span></span> — <b></b></div>
+      <div class="weather-temp"><b></b><i class="wi wi-degrees"></i><i class="wi sky"></i></div>
+      <div class="weather-condition">
+        <p><i class="wi sky"></i><b></b></p>
+        <p><i class="wi wind"></i><b></b> m/s, <b></b></p>
+      </div>
+      <div class="weather-advance">
+        <p><i class="wi wi-barometer"></i><b></b> mm Hg</p>
+        <p><i class="wi wi-humidity"></i><b></b>% humidity</p>
+      </div>
+
+      <ul class="weather-days">
+        <li>
+          <p>Mon</p>
+          <i class="wi wi-day-sunny"></i>
+          <p>...</p>
+        </li>
+        <li>
+          <p>Tue</p>
+          <i class="wi wi-day-sunny"></i>
+          <p>...</p>
+        </li>
+        <li>
+          <p>Wed</p>
+          <i class="wi wi-day-sunny"></i>
+          <p>...</p>
+        </li>
+        <li>
+          <p>Thu</p>
+          <i class="wi wi-day-sunny"></i>
+          <p>...</p>
+        </li>
+        <li>
+          <p>Fri</p>
+          <i class="wi wi-day-sunny"></i>
+          <p>...</p>
+        </li>
+      </ul>
+
+
+      <div class="watch">
+        <div class="watch-case"></div>
+        <div class="watch-face"></div>
+        <div class="watch-dial-outline"></div>
+        <div class="watch-dial num3-6"></div>
+        <div class="watch-dial num9-12"></div>
+        <div class="watch-hour"></div>
+        <div class="watch-minute"></div>
+        <div class="watch-second"></div>
+        <div class="watch-cap"></div>
+        <div class="watch-cap-in"></div>
+      </div>
+
+
+      <div class="inspired">Inspired by <a href="https://dribbble.com/shots/1146353-Weather" target="_blank">Weather</a></div>
+    </div>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  /* ==================== Weather ==================== */
+  function getWeather() {
+    if (!navigator.geolocation){
+      alert("<p>Geolocation is not supported by your browser</p>");
+      return;
+    }
+
+    /* ==================== Weather icon ==================== */
+    function getIcon(icon) {
+      switch (icon) {
+        case '01d': return 'wi-day-sunny';
+        case '02d': return 'wi-day-cloudy';
+        case '03d': return 'wi-cloud';
+        case '04d': return 'wi-cloudy';
+        case '09d': return 'wi-day-showers';
+        case '10d': return 'wi-day-rain';
+        case '11d': return 'wi-day-thunderstorm';
+        case '13d': return 'wi-day-snow';
+        case '50d': return 'wi-day-fog';
+        case '01n': return 'wi-night-clear';
+        case '02n': return 'wi-night-alt-cloudy';
+        case '03n': return 'wi-cloud';
+        case '04n': return 'wi-cloudy';
+        case '09n': return 'wi-night-alt-showers';
+        case '10n': return 'wi-night-alt-rain';
+        case '11n': return 'wi-night-alt-thunderstorm';
+        case '13n': return 'wi-night-alt-snow';
+        case '50n': return 'wi-night-fog';
+      }
+    }
+
+    /* ==================== Wind direction & wind icon ==================== */
+    function getWind(w) {
+      if (w >= 337.5 || w <= 22.5) return ['S', 'wi-direction-up'];
+      if (w >= 22.5 || w <= 67.5) return ['SW', 'wi-direction-up-right'];
+      if (w >= 67.5 || w <= 112.5) return ['W', 'wi-direction-right'];
+      if (w >= 112.5 || w <= 157.5) return ['NW', 'wi-direction-down-right'];
+
+      if (w >= 157.5 || w <= 202.5) return ['N', 'wi-direction-down'];
+      if (w >= 202.5 || w <= 247.5) return ['SW', 'wi-direction-down-left'];
+      if (w >= 247.5 || w <= 292.5) return ['E', 'wi-direction-left'];
+      if (w >= 292.5 || w <= 337.5) return ['SE', 'wi-direction-up-left'];
+    }
+
+    function getOrd(n) {
+      if (n == 1 || n == 21 || n == 31) return 'st';
+      else if (n == 2 || n == 22) return 'nd';
+      else if (n == 3 || n == 23) return 'rd';
+      else return 'th';
+    }
+
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+      /* ==================== today weather ==================== */
+      $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&units=metric&appid=7651d09660f1d769a8571603469ff295'
+      }).done(function(data) {
+        var date = new Date();
+        var today = date.getDate();
+        var todayTemp = Math.floor(data.main.temp);
+        var todayTempZero = (todayTemp < 0) ? '-' : (todayTemp > 0) ? '+' : '';
+
+        $('.weather-date b').text(date.toLocaleString("en-US", {weekday: 'long'}) + ' ' + today + getOrd(today) + ', ' + date.toLocaleString("en-US", {month: 'long'}));
+        $('.weather-date span').text(' ' + data.name);
+        $('.weather-temp b').text(todayTempZero + todayTemp);
+        $('.weather-temp .sky').addClass(getIcon(data.weather[0].icon));
+        $('.weather-condition .sky').addClass(getIcon(data.weather[0].icon));
+        $('.weather-condition .sky + b').text(data.weather[0].main);
+        $('.wi-barometer + b').text(Math.floor(data.main.pressure));
+        $('.wi-humidity + b').text(data.main.humidity);
+        $('.wind').addClass(getWind(data.wind.deg)[1]);
+        $('.wind + b').text(data.wind.speed);
+        $('.wind + b + b').text(getWind(data.wind.deg)[0]);
+        $('.weather-location span').text(data.name + ', ' + data.sys.country);
+
+        /* ==================== 5 day weather ==================== */
+        $.ajax({
+          url: 'http://api.openweathermap.org/data/2.5/forecast?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&units=metric&appid=7651d09660f1d769a8571603469ff295'
+        }).done(function(data) {
+          var weekCount = 1;
+
+          for (var i = 0; i < data.list.length; i++) {
+            var date = new Date(data.list[i].dt_txt);
+
+            if (date.getHours() === 15) {
+              var weekdayTemp = Math.floor(data.list[i].main.temp);
+              var weekdayTempZero = (weekdayTemp < 0) ? '-' : (weekdayTemp > 0) ? '+' : '';
+              $('.weather-days li:nth-child(' + weekCount + ') p:first-child').text(date.toLocaleString("en-US", {weekday: 'short'}));
+              $('.weather-days li:nth-child(' + weekCount + ') p:last-child').text(weekdayTempZero + weekdayTemp);
+              $('.weather-days li:nth-child(' + weekCount + ') i').addClass(getIcon(data.list[i].weather[0].icon));
+              weekCount++;
+            }
+          }
+
+          if(!init) $('.loader').fadeOut('slow', function() {
+            $('.weather').fadeIn('slow');
+            init = true;
+          });
+        });
+      }).fail(function() {
+        alert( "error" );
+      })
+      .always(function() {
+        alert( "complete" );
+      });
+    });
+  }
+
+  /* ==================== Watch ==================== */
+  var sec = 0, min = 0, hour = 0, init = false;
+  var time = new Date();
+  var sec = time.getSeconds() * 6;
+
+  function setTime() {
+    time = new Date();
+    min = time.getMinutes() * 6;
+    hour = time.getHours() % 12 / 12 * 360 + (min / 12);
+
+    $('.watch-hour').css({ '-moz-transform': 'rotate(' + hour + 'deg)', '-o-transform': 'rotate(' + hour + 'deg)', '-webkit-transform': 'rotate(' + hour + 'deg)' });
+    $('.watch-minute').css({ '-moz-transform': 'rotate(' + min + 'deg)', '-o-transform': 'rotate(' + min + 'deg)', '-webkit-transform': 'rotate(' + min + 'deg)' });
+    $('.watch-second').css({ '-moz-transform': 'rotate(' + sec + 'deg)', '-o-transform': 'rotate(' + sec + 'deg)', '-webkit-transform': 'rotate(' + sec + 'deg)' });
+
+    sec += 6;
+  }
+
+  function refreshTime() {
+    setTime(), setTimeout(refreshTime, 1000);
+  }
+
+  refreshTime();
+  getWeather();
+</script>
+
+  </body>
+</html>
