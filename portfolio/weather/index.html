@@ -124,7 +124,7 @@
     navigator.geolocation.getCurrentPosition(function(position) {
       /* ==================== today weather ==================== */
       $.ajax({
-        url: 'https://api.openweathermap.org/data/2.5/weather?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&units=metric&appid=6c22f3bb5746a1b143236cbc2e0e5bca'
+        url: 'api.openweathermap.org/data/2.5/weather?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&units=metric&appid=6c22f3bb5746a1b143236cbc2e0e5bca'
       }).done(function(data) {
         var date = new Date();
         var today = date.getDate();
@@ -146,7 +146,7 @@
 
         /* ==================== 5 day weather ==================== */
         $.ajax({
-          url: 'https://api.openweathermap.org/data/2.5/forecast?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&units=metric&appid=6c22f3bb5746a1b143236cbc2e0e5bca'
+          url: 'api.openweathermap.org/data/2.5/forecast?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&units=metric&appid=6c22f3bb5746a1b143236cbc2e0e5bca'
         }).done(function(data) {
           var weekCount = 1;
 
