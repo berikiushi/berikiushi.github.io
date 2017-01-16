@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=1000'>
+    <meta name='format-detection' content='telephone=no'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <meta name='apple-mobile-web-app-title' content='Matbets'>
+    <title>Matbets</title>
+    <link rel='stylesheet' href='redactor/css/redactor.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link href='img/favicon.ico' rel='shortcut icon'>
+    <link rel='apple-touch-icon' href='img/touch/apple-touch-icon-57x57-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='72x72' href='img/touch/apple-touch-icon-72x72-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='76x76' href='img/touch/apple-touch-icon-76x76-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='114x114' href='img/touch/apple-touch-icon-114x114-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='120x120' href='img/touch/apple-touch-icon-120x120-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='144x144' href='img/touch/apple-touch-icon-144x144-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='152x152' href='img/touch/apple-touch-icon-152x152-precomposed.png'>
+  </head>
+  <body class='pseudo-popup'>
+    <div class='bright js-toolbar toolbar'>
+      <div class='wrapper'>
+        <a class='logo-link' href='/main_page.html' aria-label='Matbets'>
+          <object class='logo' id='logo' type='image/svg+xml' data='img&#47;logo_green.svg' width='125' height='27' title='Matbets'></object>
+        </a>
+        <form class='goods-tools' action='/'>
+          <div class='tools-item tools-search'>
+            <input class='tools-search-text' type='text' placeholder='Поиск изделий и брендов'>
+            <input class='small tools-search-text' type='text' placeholder='Поиск'>
+            <button class='icon icon-search tools-search-button' type='submit' title='Найти'>Найти</button>
+          </div>
+          <div class='tools-dropbox tools-item'>
+            <div class='tools-dropbox-button'>Изделия</div>
+            <ul class='tools-dropbox-list'>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Детям</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Женщинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мужчинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Дом и быт</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Красота и здоровье</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Искусство</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Игрушки</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Механизмы и технологии</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Идеи подарков</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Зоотовары</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Материалы для творчества</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Бумажные изделия</a>
+              </li>
+            </ul>
+          </div>
+          <div class='tools-dropbox tools-item'>
+            <div class='tools-dropbox-button'>Бренды</div>
+            <ul class='tools-dropbox-list'>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Детям</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Женщинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мужчинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Дом и быт</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Красота и здоровье</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Искусство</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Игрушки</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Механизмы и технологии</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Идеи подарков</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Зоотовары</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Материалы для творчества</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Бумажные изделия</a>
+              </li>
+            </ul>
+          </div>
+        </form>
+        <div class='js-demo-vizitor user-tools' style='display: none;'>
+          <a class='icon icon-cart tools-item tools-link' href='#' title='Корзина'></a>
+          <a class='js-popup-link login tools-item tools-link' href='#' data-popup='#auth-form'>Войти</a>
+        </div>
+        <div class='js-demo-user user-tools' style=''>
+          <a class='badge-notification icon icon-letter tools-item tools-link' href='messages.html' title='Сообщения'>
+            <span class='badge'>10</span>
+          </a>
+          <a class='icon icon-heart tools-item tools-link' href='#' title='Избранное'></a>
+          <a class='badge-notification icon icon-cart tools-item tools-link' href='#' title='Корзина'>
+            <span class='badge'>1000</span>
+          </a>
+          <div class='tools-dropbox tools-item'>
+            <div class='tools-dropbox-button'>Username</div>
+            <ul class='tools-dropbox-list'>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мои заказы</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мой бренд</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Новости</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>
+                  Сообщества
+                  <span class='tools-dropbox-counter'>10</span>
+                </a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Подписчики</a>
+              </li>
+              <li class='tools-dropbox-item tools-dropbox-new-part'>
+                <a class='tools-dropbox-link' href='#'>Настройки аккаунта</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Настройки бренда</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Вопросы и ответы</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='js-demo-logout tools-dropbox-link' href='#'>Выход</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='wrapper'>
+      <a class='icon icon-popup-close js-sticky pseudo-popup-close' href='#' title='Закрыть' data-top='35'>Закрыть</a>
+      <h1 class='pseudo-popup-title'>
+        Добавить изделие
+      </h1>
+      <form class='form' action=''>
+        <div class='form-fieldset'>
+          <label class='form-label required' for='product-name'>Имя изделия</label>
+          <div class='form-field width-l'>
+            <input class='form-field-input' id='product-name' type='text'>
+          </div>
+        </div>
+        <div class='hr-sec'></div>
+        <div class='form-fieldset'>
+          <div class='form-label required'>Фото изделия</div>
+          <p>Опубликуйте до пяти фотографий вашего изделия. Используйте высококачественные JPG или PNG  файлы с разрешением не менее 570px (рекомендуемое разрешение 1000 px). В целях повышения качества фотографий мы не рекомендуем использовать вспышку.</p>
+          <ul class='add-product-list tile-list'>
+            <li class='add-product-item tile-list-item'>
+              <div class='add-tool' href='javascript:void(0)'>
+                <span>
+                  Поместите изображение в это окно или нажмите для загрузки Фото.
+                </span>
+                <input class='add-tool-input' type='file'>
+              </div>
+            </li>
+            <li class='goods-item tile-list-item'>
+              <div class='item-tools js-item-tools'>
+                <a class='icon icon-edit' href='#' title='Редактировать'>Редактировать</a>
+                <a class='icon icon-trash js-demo-remove' href='#' title='Удалить'>Удалить</a>
+              </div>
+              <div class='goods-image' style='background-image: url(img/temporary/product_2x.jpg);'></div>
+            </li>
+            <li class='goods-item tile-list-item'>
+              <div class='item-tools js-item-tools'>
+                <a class='icon icon-edit' href='#' title='Редактировать'>Редактировать</a>
+                <a class='icon icon-trash js-demo-remove' href='#' title='Удалить'>Удалить</a>
+              </div>
+              <div class='goods-image' style='background-image: url(img/temporary/product_2x.jpg);'></div>
+            </li>
+            <li class='goods-item tile-list-item'>
+              <div class='item-tools js-item-tools'>
+                <a class='icon icon-edit' href='#' title='Редактировать'>Редактировать</a>
+                <a class='icon icon-trash js-demo-remove' href='#' title='Удалить'>Удалить</a>
+              </div>
+              <div class='goods-image' style='background-image: url(img/temporary/product_2x.jpg);'></div>
+            </li>
+            <li class='goods-item tile-list-item'>
+              <div class='item-tools js-item-tools'>
+                <a class='icon icon-edit' href='#' title='Редактировать'>Редактировать</a>
+                <a class='icon icon-trash js-demo-remove' href='#' title='Удалить'>Удалить</a>
+              </div>
+              <div class='goods-image' style='background-image: url(img/temporary/product_2x.jpg);'></div>
+            </li>
+          </ul>
+        </div>
+        <div class='hr-sec'></div>
+        <div class='form-fieldset'>
+          <div class='form-label required'>Категория</div>
+          <p>Изделие будет опубликовано во всех выбранных категориях.</p>
+          <div class='form-fieldset-gray'>
+            <div class='form-field-select'>
+              <select class='js-primary-select'>
+                <option>Категория 1</option>
+                <option>Категория 2</option>
+                <option>Категория 3</option>
+                <option>Категория 4</option>
+              </select>
+            </div>
+            <div class='form-field-select'>
+              <select class='js-primary-select'>
+                <option>Подкатегория 1</option>
+                <option>Подкатегория 2</option>
+                <option>Подкатегория 3</option>
+                <option>Подкатегория 4</option>
+              </select>
+            </div>
+            <div class='form-field-select select-tags'>
+              <select class='js-multi-select' multiple>
+                <option>Подкатегория 1</option>
+                <option>Подкатегория 2</option>
+                <option>Подкатегория 3</option>
+                <option>Подкатегория 4</option>
+                <option>Подкатегория 5</option>
+                <option>Подкатегория 6</option>
+                <option>Подкатегория 7</option>
+                <option>Подкатегория 8</option>
+              </select>
+            </div>
+            <a class='field-close icon icon-popup-close' href='javascript:void(0)'></a>
+          </div>
+          <div class='form-fieldset-gray'>
+            <div class='form-field-select'>
+              <select class='js-primary-select'>
+                <option>Категория 1</option>
+                <option>Категория 2</option>
+                <option>Категория 3</option>
+                <option>Категория 4</option>
+              </select>
+            </div>
+            <div class='form-field-select'>
+              <select class='js-primary-select'>
+                <option>Подкатегория 1</option>
+                <option>Подкатегория 2</option>
+                <option>Подкатегория 3</option>
+                <option>Подкатегория 4</option>
+              </select>
+            </div>
+            <div class='form-field-select select-tags'>
+              <select class='js-multi-select' multiple>
+                <option>Подкатегория 1</option>
+                <option>Подкатегория 2</option>
+                <option>Подкатегория 3</option>
+                <option>Подкатегория 4</option>
+                <option>Подкатегория 5</option>
+                <option>Подкатегория 6</option>
+                <option>Подкатегория 7</option>
+                <option>Подкатегория 8</option>
+              </select>
+            </div>
+            <a class='field-close icon icon-popup-close' href='javascript:void(0)'></a>
+          </div>
+          <input class='button yellow' type='submit' value='Добавить'>
+        </div>
+        <div class='hr-sec'></div>
+        <div class='form-fieldset'>
+          <div class='form-label required'>Размер, цвет и цена изделия</div>
+          <p>Укажите размер /габариты, цвет и цену изделия. Ваши покупатели смогут выбрать указанные характеристики при оформлении заказа.</p>
+          <table class='features'>
+            <tr>
+              <th>
+                <span>
+                  Размер /габариты
+                  <a class='icon icon-help tooltip' href='javascript:void(0)'></a>
+                  <span class='tooltip-popup'>Не забудьте указать единицу измерения. Пример: высота 25 см, ширина 30 см, глубина 40 см.</span>
+                </span>
+              </th>
+              <th>
+                <span>
+                  Цвет
+                  <a class='icon icon-help tooltip' href='javascript:void(0)'></a>
+                  <span class='tooltip-popup'>
+                    Ведите цвет изделия.
+                    <br>
+                    Пример: Зеленый.
+                  </span>
+                </span>
+              </th>
+              <th>
+                <span>
+                  Цена
+                  <a class='icon icon-help tooltip' href='javascript:void(0)'></a>
+                  <span class='tooltip-popup'>Вы можете назначать любую справедливую цену за изделия, Matbets автоматически прибавит к установленной цене банковскую комиссию за транзакции (5%) и сервисный сбор (5%), который поможет нам развивать и поддерживать сайт.</span>
+                </span>
+              </th>
+              <th>
+                <span>
+                  Вес
+                  <a class='icon icon-help tooltip' href='javascript:void(0)'></a>
+                  <span class='tooltip-popup'>Вес необходимо указать для расчёта стоимости доставки по тарифам почты России. Введите приблизительный вес вашего изделия. Вы можете указать как целое (Пример: 2 кг), так и дробное значение через запятую или точку (Пример: 10,5 кг или 2.3 кг).</span>
+                </span>
+              </th>
+              <th>
+                <span>
+                  Количество
+                </span>
+              </th>
+              <th>
+                <span>
+                  В наличии
+                </span>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <div class='form-field'>
+                  <input class='form-field-input' type='text' placeholder='Размер /габариты'>
+                </div>
+              </td>
+              <td>
+                <div class='form-field'>
+                  <input class='form-field-input' type='text' placeholder='Цвет'>
+                </div>
+              </td>
+              <td>
+                <div class='desc form-field'>
+                  <input class='form-field-input' type='text' placeholder='Цена'>
+                  <div class='form-field-desc'>руб.</div>
+                </div>
+              </td>
+              <td>
+                <div class='desc form-field'>
+                  <input class='form-field-input' type='text' placeholder='Вес'>
+                  <div class='form-field-desc'>кг</div>
+                </div>
+              </td>
+              <td>
+                <div class='desc form-field'>
+                  <input class='form-field-input' type='text' placeholder='Кол.'>
+                  <div class='form-field-desc'>шт.</div>
+                </div>
+              </td>
+              <td>
+                <div class='custom-checkbox'>
+                  <input id='c1' type='checkbox' name='type'>
+                  <label for='c1'></label>
+                </div>
+              </td>
+              <td>
+                <a class='field-close icon icon-popup-close' href='javascript:void(0)'></a>
+              </td>
+            </tr>
+          </table>
+          <input class='button yellow' type='submit' value='Добавить'>
+        </div>
+        <div class='hr-sec'></div>
+        <div class='form-fieldset'>
+          <div class='form-label required'>Материалы</div>
+          <p>Для того чтобы указать материал, введите его название и нажмите кнопку добавить. Вы можете добавить до 10 материалов, входящих в состав изделия.</p>
+          <div class='form-field width-m'>
+            <input class='form-field-input' type='text' placeholder='Пример: Древесина ели'>
+          </div>
+          <input class='button yellow' type='button' value='Добавить'>
+          <div class='tags'>
+            <span class='tags-item'>
+              Хлопок
+              <a class='icon icon-popup-close tags-remove' href='javascript:void(0)'></a>
+            </span>
+            <span class='tags-item'>
+              Двевисина ели
+              <a class='icon icon-popup-close tags-remove' href='javascript:void(0)'></a>
+            </span>
+            <span class='tags-item'>
+              Медь
+              <a class='icon icon-popup-close tags-remove' href='javascript:void(0)'></a>
+            </span>
+          </div>
+        </div>
+        <div class='hr-sec'></div>
+        <div class='form-fieldset'>
+          <div class='form-label required'>Параметры поиска</div>
+          <p>Задайте ключевые слова или словосочетания, по которым пользователи смогут найти изделие на Matbets. Вы можете указать до 20 ключевых слов и словосочетаний.</p>
+          <div class='form-field width-m'>
+            <input class='form-field-input' type='text' placeholder='Пример: Книжная полка из дерева'>
+          </div>
+          <input class='button yellow' type='button' value='Добавить'>
+          <div class='tags'>
+            <span class='tags-item'>
+              Стол
+              <a class='icon icon-popup-close tags-remove' href='javascript:void(0)'></a>
+            </span>
+          </div>
+        </div>
+        <div class='hr-sec'></div>
+        <div class='form-fieldset'>
+          <div class='form-label required'>Срок отправки изделия</div>
+          <p>Покупателю важно знать, в течение какого срока вы будите готовы отправить изделие – укажите количество времени которое понадобится на подготовку изделия к отправке.</p>
+          <div class='form-field-select width-m'>
+            <select class='js-shipment-select' data-placeholder='Укажите срок отправки изделия'>
+              <option></option>
+              <option>1 рабочий день</option>
+              <option>1-2 рабочих дня</option>
+              <option>1-3 рабочих дня</option>
+              <option>3-5 рабочих дней</option>
+              <option>1 неделя</option>
+              <option>1-2 недели</option>
+              <option>2-3 недели</option>
+              <option disabled='disabled'>-</option>
+              <option>Задать в свой диапазон</option>
+            </select>
+          </div>
+          <div class='form-fieldset inline js-shipment-range' style='display: none;'>
+            <div class='form-field width-s'>
+              <input class='form-field-input' type='text' placeholder='От'>
+            </div>
+            <div class='form-field width-s'>
+              <input class='form-field-input' type='text' placeholder='До'>
+            </div>
+            <ul class='form-field-radio'>
+              <li class='form-field-radio-item'>
+                <input class='form-field-radio-input' id='shipment-day' type='radio' name='shipment-delay' checked='checked'>
+                <label class='form-field-radio-label' for='shipment-day'>
+                  Рабочий день
+                </label>
+              </li>
+              <li class='form-field-radio-item'>
+                <input class='form-field-radio-input' id='shipment-week' type='radio' name='shipment-delay'>
+                <label class='form-field-radio-label' for='shipment-week'>
+                  Неделя
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='hr-sec'></div>
+        <div class='form-fieldset'>
+          <div class='form-label'>Об изделии</div>
+          <p>Всегда приятнее купить вещь с историей, знать, что вдохновило автора на создание именно такого предмета. Здесь вы можете поделиться историей вашего изделия или сообщить любую другую информацию покупателям.</p>
+          <textarea id='about-product'></textarea>
+        </div>
+        <div class='hr-sec'></div>
+        <div class='form-fieldset right'>
+          <a class='button gray' href='javascript:void(0)'>Сохранить, но не публиковать</a>
+          <a class='button yellow' href='javascript:void(0)'>Предварительный просмотр</a>
+          <input class='button' type='submit' value='Опубликовать'>
+        </div>
+      </form>
+    </div>
+    <script src='js/libs.js'></script>
+    <script src='redactor/redactor.min.js'></script>
+    <script src='redactor/langs/ru.js'></script>
+    <script>
+      $('#about-product').redactor({
+        placeholder: 'Вы можете пропустить этот шаг и рассказать о изделии в любое удобное время',
+        minHeight: 400,
+        lang: 'ru'
+      });
+    </script>
+  </body>
+</html>

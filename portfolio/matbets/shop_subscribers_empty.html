@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=1000'>
+    <meta name='format-detection' content='telephone=no'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <meta name='apple-mobile-web-app-title' content='Matbets'>
+    <title>Matbets</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link href='img/favicon.ico' rel='shortcut icon'>
+    <link rel='apple-touch-icon' href='img/touch/apple-touch-icon-57x57-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='72x72' href='img/touch/apple-touch-icon-72x72-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='76x76' href='img/touch/apple-touch-icon-76x76-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='114x114' href='img/touch/apple-touch-icon-114x114-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='120x120' href='img/touch/apple-touch-icon-120x120-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='144x144' href='img/touch/apple-touch-icon-144x144-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='152x152' href='img/touch/apple-touch-icon-152x152-precomposed.png'>
+  </head>
+  <body class='shop'>
+    <div class='fixed bright js-toolbar toolbar'>
+      <div class='wrapper'>
+        <a class='logo-link' href='/main_page.html' aria-label='Matbets'>
+          <object class='logo' id='logo' type='image/svg+xml' data='img&#47;logo_green.svg' width='125' height='27' title='Matbets'></object>
+        </a>
+        <form class='goods-tools' action='/'>
+          <div class='tools-item tools-search'>
+            <input class='tools-search-text' type='text' placeholder='Поиск изделий и брендов'>
+            <input class='small tools-search-text' type='text' placeholder='Поиск'>
+            <button class='icon icon-search tools-search-button' type='submit' title='Найти'>Найти</button>
+          </div>
+          <div class='tools-dropbox tools-item'>
+            <div class='tools-dropbox-button'>Изделия</div>
+            <ul class='tools-dropbox-list'>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Детям</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Женщинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мужчинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Дом и быт</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Красота и здоровье</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Искусство</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Игрушки</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Механизмы и технологии</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Идеи подарков</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Зоотовары</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Материалы для творчества</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Бумажные изделия</a>
+              </li>
+            </ul>
+          </div>
+          <div class='tools-dropbox tools-item'>
+            <div class='tools-dropbox-button'>Бренды</div>
+            <ul class='tools-dropbox-list'>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Детям</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Женщинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мужчинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Дом и быт</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Красота и здоровье</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Искусство</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Игрушки</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Механизмы и технологии</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Идеи подарков</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Зоотовары</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Материалы для творчества</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Бумажные изделия</a>
+              </li>
+            </ul>
+          </div>
+        </form>
+        <div class='js-demo-vizitor user-tools' style=''>
+          <a class='icon icon-cart tools-item tools-link' href='#' title='Корзина'></a>
+          <a class='js-popup-link login tools-item tools-link' href='#' data-popup='#auth-form'>Войти</a>
+        </div>
+        <div class='js-demo-user user-tools' style='display: none;'>
+          <a class='badge-notification icon icon-letter tools-item tools-link' href='messages.html' title='Сообщения'>
+            <span class='badge'>10</span>
+          </a>
+          <a class='icon icon-heart tools-item tools-link' href='#' title='Избранное'></a>
+          <a class='badge-notification icon icon-cart tools-item tools-link' href='#' title='Корзина'>
+            <span class='badge'>1000</span>
+          </a>
+          <div class='tools-dropbox tools-item'>
+            <div class='tools-dropbox-button'>Username</div>
+            <ul class='tools-dropbox-list'>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мои заказы</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мой бренд</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Новости</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>
+                  Сообщества
+                  <span class='tools-dropbox-counter'>10</span>
+                </a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Подписчики</a>
+              </li>
+              <li class='tools-dropbox-item tools-dropbox-new-part'>
+                <a class='tools-dropbox-link' href='#'>Настройки аккаунта</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Настройки бренда</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Вопросы и ответы</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='js-demo-logout tools-dropbox-link' href='#'>Выход</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='brand-header' style='background-image: url(img/temporary/shop_banner.jpg)'>
+      <div class='wrapper'>
+        <div class='item-tools js-item-tools'>
+          <a class='icon icon-like-off js-demo-favorite' href='#' title='Добавить в избранное'>Добавить в избранное</a>
+          <a class='icon icon-more js-dropbox-link' href='#' title='Дополнительно'>Дополнительно</a>
+        </div>
+        <div class='brand-card'>
+          <picture class='brand-image'>
+            <source srcset='img/temporary/owner_2x.jpg 2x, img/temporary/owner.jpg 1x'></source>
+            <img src='img/temporary/owner.jpg' alt=''>
+          </picture>
+          <div class='brand-name'>
+            <a href='#'>Название бренда</a>
+          </div>
+          <div class='brand-author'>
+            <a href='#'>Имя Фамилия</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class='page-menu'>
+      <li class='page-menu-item'>
+        <a class='icon icon-shop-off page-menu-link' href='#'>Магазин</a>
+      </li>
+      <li class='page-menu-item'>
+        <a class='icon icon-make-off page-menu-link' href='#'>О бренде</a>
+      </li>
+      <li class='page-menu-item'>
+        <a class='page-menu-link' href='#'>
+          Отзывы
+          <small>0</small>
+        </a>
+      </li>
+      <li class='page-menu-item'>
+        <a class='active page-menu-link' href='#'>
+          Подписчики
+          <small>0</small>
+        </a>
+      </li>
+      <li class='page-menu-item'>
+        <a class='page-menu-link' href='#'>
+          Продажи
+          <small>0</small>
+        </a>
+      </li>
+    </ul>
+    <section class='content-part content-part-empty'>
+      <div class='wrapper'>
+        <p>У "Название бренда" пока нет подписчиков.</p>
+        <p>&nbsp;</p>
+        <p>
+          <a class='button' href='#'>Подписаться</a>
+        </p>
+      </div>
+    </section>
+    <footer class='footer js-footer'>
+      <div class='wrapper'>
+        <ul class='footer-menu'>
+          <li class='footer-menu-item'>
+            <a class='footer-menu-link' href='#'>О Matbets</a>
+          </li>
+          <li class='footer-menu-item'>
+            <a class='footer-menu-link' href='#'>Владельцу бренда</a>
+          </li>
+          <li class='footer-menu-item'>
+            <a class='footer-menu-link' href='#'>Покупателю</a>
+          </li>
+          <li class='footer-menu-item'>
+            <a class='footer-menu-link' href='#'>Сообщество</a>
+          </li>
+          <li class='footer-menu-item'>
+            <a class='footer-menu-link' href='#'>Вопросы и ответы</a>
+          </li>
+          <li class='footer-menu-item'>
+            <a class='footer-menu-link' href='#'>Пользовательское соглашение</a>
+          </li>
+        </ul>
+        <a class='footer-support-link js-popup-link' href='#' data-popup='#to-support'>Отправить запрос в службу поддержки</a>
+        <div class='footer-social'>
+          <a class='footer-social-link icon icon-instagram' href='#' title='Подпишитесь на нас в Instagram'>Подпишитесь на нас в Instagram</a>
+          <a class='footer-social-link icon icon-fb' href='#' title='Вступайте в группу в Facebook'>Вступайте в группу в Facebook</a>
+          <a class='footer-social-link icon icon-vk' href='#' title='Вступайте в группу в Контакте'>Вступайте в группу в Контакте</a>
+          <a class='footer-social-link icon icon-pinterest' href='#' title='Подпишитесь на нас в Pinterest'>Подпишитесь на нас в Pinterest</a>
+        </div>
+        <div class='footer-copyright'>© 2016 Matbets. Все права защищены.</div>
+      </div>
+    </footer>
+    <div class='js-overlay overlay'></div>
+    <div class='js-popups popup-wrap'>
+      <div class='compact js-popup popup' id='auth-form'>
+        <div class='close icon icon-popup-close js-close' title='Закрыть'></div>
+        <div class='popup-title'>Вход</div>
+        <a class='button icon icon-btn-vk' href='#'>Войти через Вконтакте</a>
+        <a class='button icon icon-btn-g' href='#'>Войти через Google+</a>
+        <div class='hr'>
+          <span>или</span>
+        </div>
+        <form class='form js-demo-auth-form' action='/'>
+          <fieldset class='fieldset'>
+            <div class='field'>
+              <input class='field-tag' type='email' placeholder='Адрес электронной почты' required>
+            </div>
+            <div class='field password'>
+              <input class='field-tag' type='password' placeholder='Пароль' required>
+              <a class='js-popup-link' href='#' data-popup='#forgot-form'>Не помните?</a>
+            </div>
+          </fieldset>
+          <div class='buttons'>
+            <button class='button'>Войти</button>
+          </div>
+        </form>
+        <div class='popup-footer'>
+          <a class='js-popup-link' href='#' data-popup='#reg-form'>Регистрация нового пользователя</a>
+        </div>
+      </div>
+      <div class='compact js-popup popup' id='reg-form'>
+        <div class='close icon icon-popup-close js-close' title='Закрыть'></div>
+        <div class='back icon icon-popup-goback js-popup-link' title='Вернуться' data-popup='#auth-form'></div>
+        <div class='popup-title'>Регистрация</div>
+        <form class='form' action='/'>
+          <fieldset class='fieldset'>
+            <div class='field'>
+              <input class='field-tag' type='text' placeholder='Имя' required>
+            </div>
+            <div class='field'>
+              <input class='field-tag' type='text' placeholder='Фамилия' required>
+            </div>
+            <div class='field'>
+              <input class='field-tag' type='email' placeholder='Адрес электронной почты' required>
+            </div>
+            <div class='field'>
+              <input class='field-tag' type='password' placeholder='Пароль' required>
+            </div>
+          </fieldset>
+          <div class='buttons'>
+            <button class='button'>Зарегистрироваться</button>
+          </div>
+        </form>
+        <div class='popup-info'>
+          Фактом регистрации вы подтверждаете согласие с условиями
+          <a href='#'>Пользовательского соглашения</a>
+          Matbets.
+        </div>
+      </div>
+      <div class='compact js-popup popup' id='forgot-form'>
+        <div class='close icon icon-popup-close js-close' title='Закрыть'></div>
+        <div class='back icon icon-popup-goback js-popup-link' title='Вернуться' data-popup='#auth-form'></div>
+        <div class='popup-title'>Не помните пароль? </div>
+        <div class='popup-info'>
+          Мы отправим инструкции по смене
+          <br>
+          пароля на ваш e-mail.
+        </div>
+        <form class='form js-demo-forgot-form' action='/'>
+          <fieldset class='fieldset'>
+            <div class='field'>
+              <input class='field-tag' type='email' placeholder='Адрес электронной почты' required>
+            </div>
+          </fieldset>
+          <div class='buttons'>
+            <button class='button'>Восстановить</button>
+          </div>
+        </form>
+        <div class='popup-footer'>
+          <a class='js-popup-link' href='#' data-popup='#reg-form'>Регистрация нового пользователя</a>
+        </div>
+      </div>
+      <div class='compact js-popup popup' id='forgot-form-error'>
+        <div class='close icon icon-popup-close js-close' title='Закрыть'></div>
+        <div class='back icon icon-popup-goback js-popup-link' title='Вернуться' data-popup='#auth-form'></div>
+        <div class='popup-title'>Не помните пароль?</div>
+        <div class='error popup-info'>
+          Указанный e-mail не
+          <br>
+          зарегистрирован на Matbets.
+        </div>
+        <form class='form js-demo-forgot-form-error' action='/'>
+          <fieldset class='fieldset'>
+            <div class='error field reset'>
+              <input class='field-tag' type='email' placeholder='Адрес электронной почты' required value='asd@asd.asd'>
+            </div>
+          </fieldset>
+          <div class='buttons'>
+            <button class='button'>Восстановить</button>
+          </div>
+        </form>
+        <div class='popup-footer'>
+          <a class='js-popup-link' href='#' data-popup='#reg-form'>Регистрация нового пользователя</a>
+        </div>
+      </div>
+      <div class='compact js-popup popup' id='forgot-form-done'>
+        <div class='close icon icon-popup-close js-close' title='Закрыть'></div>
+        <div class='back icon icon-popup-goback js-popup-link' title='Вернуться' data-popup='#auth-form'></div>
+        <div class='popup-info'>
+          Инструкции по смене пароля
+          <br>
+          отправлены на ваш e-mail.
+          <br>
+          Пожалуйста, проверьте почту.
+          <span class='focus-point icon icon-validation-correct'></span>
+        </div>
+        <div class='popup-footer'>
+          <a class='js-popup-link' href='#' data-popup='#reg-form'>Регистрация нового пользователя</a>
+        </div>
+      </div>
+    </div>
+    <script src='js/libs.js'></script>
+    <script src='js/inner_page.js'></script>
+  </body>
+</html>

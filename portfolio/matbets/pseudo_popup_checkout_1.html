@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=1000'>
+    <meta name='format-detection' content='telephone=no'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <meta name='apple-mobile-web-app-title' content='Matbets'>
+    <title>Matbets</title>
+    <link rel='stylesheet' href='redactor/css/redactor.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link href='img/favicon.ico' rel='shortcut icon'>
+    <link rel='apple-touch-icon' href='img/touch/apple-touch-icon-57x57-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='72x72' href='img/touch/apple-touch-icon-72x72-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='76x76' href='img/touch/apple-touch-icon-76x76-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='114x114' href='img/touch/apple-touch-icon-114x114-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='120x120' href='img/touch/apple-touch-icon-120x120-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='144x144' href='img/touch/apple-touch-icon-144x144-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='152x152' href='img/touch/apple-touch-icon-152x152-precomposed.png'>
+  </head>
+  <body class='cart pseudo-popup'>
+    <div class='bright js-toolbar toolbar'>
+      <div class='wrapper'>
+        <a class='logo-link' href='/main_page.html' aria-label='Matbets'>
+          <object class='logo' id='logo' type='image/svg+xml' data='img&#47;logo_green.svg' width='125' height='27' title='Matbets'></object>
+        </a>
+        <form class='goods-tools' action='/'>
+          <div class='tools-item tools-search'>
+            <input class='tools-search-text' type='text' placeholder='Поиск изделий и брендов'>
+            <input class='small tools-search-text' type='text' placeholder='Поиск'>
+            <button class='icon icon-search tools-search-button' type='submit' title='Найти'>Найти</button>
+          </div>
+          <div class='tools-dropbox tools-item'>
+            <div class='tools-dropbox-button'>Изделия</div>
+            <ul class='tools-dropbox-list'>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Детям</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Женщинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мужчинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Дом и быт</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Красота и здоровье</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Искусство</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Игрушки</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Механизмы и технологии</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Идеи подарков</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Зоотовары</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Материалы для творчества</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Бумажные изделия</a>
+              </li>
+            </ul>
+          </div>
+          <div class='tools-dropbox tools-item'>
+            <div class='tools-dropbox-button'>Бренды</div>
+            <ul class='tools-dropbox-list'>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Детям</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Женщинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мужчинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Дом и быт</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Красота и здоровье</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Искусство</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Игрушки</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Механизмы и технологии</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Идеи подарков</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Зоотовары</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Материалы для творчества</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Бумажные изделия</a>
+              </li>
+            </ul>
+          </div>
+        </form>
+        <div class='js-demo-vizitor user-tools' style='display: none;'>
+          <a class='icon icon-cart tools-item tools-link' href='#' title='Корзина'></a>
+          <a class='js-popup-link login tools-item tools-link' href='#' data-popup='#auth-form'>Войти</a>
+        </div>
+        <div class='js-demo-user user-tools' style=''>
+          <a class='badge-notification icon icon-letter tools-item tools-link' href='messages.html' title='Сообщения'>
+            <span class='badge'>10</span>
+          </a>
+          <a class='icon icon-heart tools-item tools-link' href='#' title='Избранное'></a>
+          <a class='badge-notification icon icon-cart tools-item tools-link' href='#' title='Корзина'>
+            <span class='badge'>1000</span>
+          </a>
+          <div class='tools-dropbox tools-item'>
+            <div class='tools-dropbox-button'>Username</div>
+            <ul class='tools-dropbox-list'>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мои заказы</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мой бренд</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Новости</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>
+                  Сообщества
+                  <span class='tools-dropbox-counter'>10</span>
+                </a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Подписчики</a>
+              </li>
+              <li class='tools-dropbox-item tools-dropbox-new-part'>
+                <a class='tools-dropbox-link' href='#'>Настройки аккаунта</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Настройки бренда</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Вопросы и ответы</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='js-demo-logout tools-dropbox-link' href='#'>Выход</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='wrapper'>
+      <a class='icon icon-popup-close js-sticky pseudo-popup-close' href='#' title='Закрыть' data-top='35'>Закрыть</a>
+      <h1 class='pseudo-popup-title'>
+        Оформление заказа
+      </h1>
+      <form class='form js-form-checkout' action='javascript:void(0)'>
+        <div class='form-fieldset'>
+          <label class='form-label required' for='name'>Имя</label>
+          <div class='form-field width-ml'>
+            <input class='form-field-input' id='name' type='text' placeholder='Имя'>
+          </div>
+          <div class='form-field width-ml'>
+            <input class='form-field-input' id='surname' type='text' placeholder='Фамилия'>
+          </div>
+        </div>
+        <div class='hr-sec'></div>
+        <div class='form-fieldset'>
+          <div class='form-label required'>Почтовые реквизиты</div>
+          <div class='form-field-body'>
+            <div class='form-field-select width-l'>
+              <select class='js-primary-select' placeholder='Россия'>
+                <option>Россия</option>
+                <option>США</option>
+                <option>Андорра</option>
+              </select>
+            </div>
+            <div class='form-field-select width-xl'>
+              <select class='js-city-select' placeholder='Город или населенный пункт'>
+                <option></option>
+                <option>Анапа</option>
+                <option>Владивосток</option>
+                <option>Москва</option>
+              </select>
+            </div>
+            <div class='form-field width-sm'>
+              <input class='form-field-input' type='text' placeholder='Индекс'>
+            </div>
+          </div>
+          <div class='form-field-body'>
+            <div class='form-field width-mm'>
+              <input class='form-field-input' id='street' type='text' placeholder='Улица'>
+            </div>
+            <div class='form-field width-sm'>
+              <input class='form-field-input' id='building' type='text' placeholder='Номер дома'>
+            </div>
+            <div class='form-field width-sm'>
+              <input class='form-field-input' id='apartment' type='text' placeholder='Номер квартиры/офиса'>
+            </div>
+          </div>
+        </div>
+        <div class='hr-sec'></div>
+        <div class='form-fieldset'>
+          <div class='form-label required'>Способ доставки</div>
+          <div class='form-fieldset inline'>
+            <ul class='form-field-radio size-l'>
+              <li class='form-field-radio-item'>
+                <input class='form-field-radio-input' id='delivery-one' type='radio' name='delivery-method' checked='checked'>
+                <label class='form-field-radio-label' for='delivery-one'>
+                  <p>Почта России</p>
+                </label>
+              </li>
+              <li class='form-field-radio-item'>
+                <input class='form-field-radio-input' id='delivery-two' type='radio' name='delivery-method'>
+                <label class='form-field-radio-label' for='delivery-two'>
+                  <p>Другой способ доставки</p>
+                  <span>Выберете этот пункт, если вы согласовали с продавцом индивидуальный способ доставки: самовывоз или через почтового оператора (DHL, FedEx, PONY EXPRESS и т.д.).</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='js-delivery-method' style='display: none;'>
+          <div class='hr-sec'></div>
+          <div class='form-fieldset'>
+            <label class='form-label' for='shipping-cost'>Стоимость доставки</label>
+            <p>Если вы согласовали с продавцом индивидуальные условия доставки, укажите ее стоимость. Указанная сумма будет прибавлена к общему счету за покупку и поступит на счет продавца. </p>
+            <div class='desc form-field width-xm'>
+              <input class='form-field-input' id='shipping-cost' type='text' placeholder='Стоимость доставки'>
+              <div class='form-field-desc'>руб.</div>
+            </div>
+          </div>
+        </div>
+        <div class='hr-sec'></div>
+        <div class='form-fieldset'>
+          <table class='features'>
+            <tr>
+              <th>
+                <span>
+                  Адрес доставки
+                </span>
+              </th>
+              <th>
+                <span>
+                  Максимальный срок доставки
+                </span>
+              </th>
+              <th>
+                <span>
+                  Стоимость доставки
+                </span>
+              </th>
+              <th>
+                <span>
+                  Стоимость заказа
+                </span>
+              </th>
+              <th>
+                <span>
+                  Итого
+                </span>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                Россия, Москва, Московская обл., Белинского 111, квартира 98
+              </td>
+              <td>
+                9-11 дней
+              </td>
+              <td>
+                300 руб.
+              </td>
+              <td>
+                300 руб.
+              </td>
+              <td>
+                600 руб.
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class='shop-creation-nav'>
+          <a class='button pull-right' href='#'>Далее</a>
+          <a class='button gray' href='#'>Назад</a>
+        </div>
+      </form>
+    </div>
+    <script src='js/libs.js'></script>
+  </body>
+</html>

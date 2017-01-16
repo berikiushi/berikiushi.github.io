@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=1000'>
+    <meta name='format-detection' content='telephone=no'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <meta name='apple-mobile-web-app-title' content='Matbets'>
+    <title>Matbets</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link href='img/favicon.ico' rel='shortcut icon'>
+    <link rel='apple-touch-icon' href='img/touch/apple-touch-icon-57x57-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='72x72' href='img/touch/apple-touch-icon-72x72-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='76x76' href='img/touch/apple-touch-icon-76x76-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='114x114' href='img/touch/apple-touch-icon-114x114-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='120x120' href='img/touch/apple-touch-icon-120x120-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='144x144' href='img/touch/apple-touch-icon-144x144-precomposed.png'>
+    <link rel='apple-touch-icon' sizes='152x152' href='img/touch/apple-touch-icon-152x152-precomposed.png'>
+  </head>
+  <body class='pseudo-popup'>
+    <div class='bright js-toolbar toolbar'>
+      <div class='wrapper'>
+        <a class='logo-link' href='/main_page.html' aria-label='Matbets'>
+          <object class='logo' id='logo' type='image/svg+xml' data='img&#47;logo_green.svg' width='125' height='27' title='Matbets'></object>
+        </a>
+        <form class='goods-tools' action='/'>
+          <div class='tools-item tools-search'>
+            <input class='tools-search-text' type='text' placeholder='Поиск изделий и брендов'>
+            <input class='small tools-search-text' type='text' placeholder='Поиск'>
+            <button class='icon icon-search tools-search-button' type='submit' title='Найти'>Найти</button>
+          </div>
+          <div class='tools-dropbox tools-item'>
+            <div class='tools-dropbox-button'>Изделия</div>
+            <ul class='tools-dropbox-list'>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Детям</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Женщинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мужчинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Дом и быт</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Красота и здоровье</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Искусство</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Игрушки</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Механизмы и технологии</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Идеи подарков</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Зоотовары</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Материалы для творчества</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Бумажные изделия</a>
+              </li>
+            </ul>
+          </div>
+          <div class='tools-dropbox tools-item'>
+            <div class='tools-dropbox-button'>Бренды</div>
+            <ul class='tools-dropbox-list'>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Детям</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Женщинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мужчинам</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Дом и быт</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Красота и здоровье</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Искусство</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Игрушки</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Механизмы и технологии</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Идеи подарков</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Зоотовары</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Материалы для творчества</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Бумажные изделия</a>
+              </li>
+            </ul>
+          </div>
+        </form>
+        <div class='js-demo-vizitor user-tools' style='display: none;'>
+          <a class='icon icon-cart tools-item tools-link' href='#' title='Корзина'></a>
+          <a class='js-popup-link login tools-item tools-link' href='#' data-popup='#auth-form'>Войти</a>
+        </div>
+        <div class='js-demo-user user-tools' style=''>
+          <a class='badge-notification icon icon-letter tools-item tools-link' href='messages.html' title='Сообщения'>
+            <span class='badge'>10</span>
+          </a>
+          <a class='icon icon-heart tools-item tools-link' href='#' title='Избранное'></a>
+          <a class='badge-notification icon icon-cart tools-item tools-link' href='#' title='Корзина'>
+            <span class='badge'>1000</span>
+          </a>
+          <div class='tools-dropbox tools-item'>
+            <div class='tools-dropbox-button'>Username</div>
+            <ul class='tools-dropbox-list'>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мои заказы</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Мой бренд</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Новости</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>
+                  Сообщества
+                  <span class='tools-dropbox-counter'>10</span>
+                </a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Подписчики</a>
+              </li>
+              <li class='tools-dropbox-item tools-dropbox-new-part'>
+                <a class='tools-dropbox-link' href='#'>Настройки аккаунта</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Настройки бренда</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='tools-dropbox-link' href='#'>Вопросы и ответы</a>
+              </li>
+              <li class='tools-dropbox-item'>
+                <a class='js-demo-logout tools-dropbox-link' href='#'>Выход</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='pseudo-popup-content wrapper'>
+      <a class='icon icon-popup-close js-sticky pseudo-popup-close' href='#' title='Закрыть' data-top='35'>Закрыть</a>
+      <h1 class='pseudo-popup-title'>
+        Объедините изделия, связанные одной
+        <br>
+        темой или стилем, в коллекцию
+      </h1>
+      <form class='form' action=''>
+        <div class='form-fieldset justify'>
+          <div class='add-collection col form-fieldset'>
+            <label class='form-label required' for='collection-name'>Название коллекции</label>
+            <div class='form-field width-l'>
+              <input class='form-field-input' id='collection-name' type='text'>
+            </div>
+            <label class='form-label' for='collection-body'>Описание коллекции</label>
+            <div class='textarea'>
+              <textarea id='collection-body' type='text'></textarea>
+            </div>
+          </div>
+          <div class='add-collection col form-fieldset'>
+            <div class='add-tool' href='#'>
+              <span>
+                Поместите изображение в это окно или
+                <br>
+                нажмите для загрузки фото.
+              </span>
+              <input class='add-tool-input' type='file'>
+            </div>
+          </div>
+        </div>
+        <div class='content-toolbar'>
+          <div class='content-toolbar-part'>
+            <div class='content-toolbar-search'>
+              <input class='content-toolbar-search-text' type='text' placeholder='Поиск изделий'>
+              <button class='content-toolbar-search-button icon icon-search' type='submit' title='Найти'>Найти</button>
+            </div>
+          </div>
+          <div class='content-toolbar-part content-toolbar-tabs js-content-tabs'>
+            <a class='active' href='#tab-0'>Все изделия (59)</a>
+            <a href='#tab-1'>Коллекция (4)</a>
+          </div>
+          <div class='content-toolbar-part'></div>
+        </div>
+        <div class='content-tabs'>
+          <div class='active content-tab product-about-text' id='tab-0-content'>
+            <ul class='tile-list'>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+            </ul>
+          </div>
+          <div class='content-tab' id='tab-1-content'>
+            <ul class='tile-list'>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+              <li class='goods-item goods-item-add-compilation tile-list-item'>
+                <div class='item-tools js-item-tools'>
+                </div>
+                <a class='goods-link' href='#'>
+                  <picture class='goods-image'>
+                    <source srcset='img/temporary/product_2x.jpg 2x, img/temporary/product.jpg 1x'></source>
+                    <img src='img/temporary/product.jpg' alt=''>
+                  </picture>
+                  <span class='goods-name'>Exact size steel replica ornament of extraordinary view</span>
+                  <div class='tile-list-item-type'>
+                    <button class='button button-action button-compilation js-button-compilation'>
+                      <div class='button-txt'>Добавить</div>
+                      <div class='button-txt'>Отменить</div>
+                    </button>
+                  </div>
+                </a>
+                <a class='goods-shop' href='#'>Leryshop</a>
+                <b class='goods-price'>
+                  89 999
+                  <i class='icon icon-rubles'></i>
+                </b>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='pseudo-popup-footer'>
+          <div class='wrapper'>
+            <button class='button button-grey js-close'>Отмена</button>
+            <button class='button'>Создать коллекцию</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src='js/libs.js'></script>
+  </body>
+</html>
