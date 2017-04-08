@@ -1,5 +1,3 @@
-'use strict';
-
 (function () {
 
   // Open mobile menu
@@ -19,9 +17,5 @@
     mobileMenu.classList.remove('_open');
     overlay.classList.remove('_show');
   }
-
-
-  // Slider
-  const mySiema = new Siema();
 
 }());
