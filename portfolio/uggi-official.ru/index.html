@@ -1,332 +1,53 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible&quot; content=&quot;IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Uggi</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <script src="./js/vendor/modernizr-2.8.3.min.js"></script><!--[if lt IE 9]>
-    <script src="./js/vendor/respond.min.js"></script><![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="header">
-        <div class="header__main"><a class="header__btn js-open-mobile-menu" href="javascript:void(0)"><span></span></a>
-          <div class="header__logo"><a href="/"><img src="./assets/images/logo.png" alt=""></a><span>Оффициальный магазин<br>«Ugg australia»</span></div>
-          <div class="header__search">
-            <div class="header__search-icon"></div>
-            <form action="javascript:void(0)">
-              <input type="text" name="search" placeholder="Более 3000 товаров">
-            </form>
-          </div>
-          <div class="header__contacts">
-            <div class="header__time">
-              <div>Время работы:</div>
-              <div>c 9:00 до 20:00</div>
-            </div>
-            <div class="header__phone">
-              <div>8 (495) 235-30-00</div>
-              <div>Звонок бесплатный по РФ</div>
-            </div>
-          </div>
-          <div class="header__callback"><a href="javascript:void(0)">Заказать звонок</a></div>
-          <div class="header__basket"><a class="header__basket-link" href="javascript:void(0)">
-              <div class="header__basket-text">Корзина</div>
-              <div class="header__basket-count"><span>2</span></div></a>
-            <div class="basket-tooltip">
-              <div class="basket-tooltip__item"><img src="./assets/images/product/product_01_01.jpg" alt="">
-                <div class="basket-tooltip__info">
-                  <div class="basket-tooltip__name">Classic Mini Black-Yellow 37&nbsp;/&nbsp;6&nbsp;US</div>
-                  <div class="basket-tooltip__price">6 190 руб.</div>
-                  <div class="basket-tooltip__quantity">4&nbsp;шт.</div>
-                </div><a class="basket-tooltip__remove btn _close" href="javascript:void(0)"></a>
-              </div>
-              <div class="basket-tooltip__item"><img src="./assets/images/product/product_01_01.jpg" alt="">
-                <div class="basket-tooltip__info">
-                  <div class="basket-tooltip__name">Classic Mini Black-Yellow 37&nbsp;/&nbsp;6&nbsp;US</div>
-                  <div class="basket-tooltip__price">6 190 руб.</div>
-                  <div class="basket-tooltip__quantity">4&nbsp;шт.</div>
-                </div><a class="basket-tooltip__remove btn _close" href="javascript:void(0)"></a>
-              </div>
-              <div class="basket-tooltip__footer">
-                <div class="basket-tooltip__total">
-                  <div class="basket-tooltip__total-txt">Общая стоимость:</div>
-                  <div class="basket-tooltip__total-sum">24 760 руб.</div>
-                </div><a class="basket-tooltip__btn btn _accent" href="javascript:void(0)">Оформить заказ</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="header__search _mobile">
-          <div class="header__search-icon"></div>
-          <form action="javascript:void(0)">
-            <input type="text" name="search" placeholder="Более 3000 товаров">
-          </form>
-        </div>
-      </div>
-      <ul class="topnav js-mobile-menu">
-        <li class="topnav__phone"><a href="tel:8-495-235-3000">
-            <div>8 (495) 235-30-00</div>
-            <div>Звоните, если у вас есть вопрос</div></a></li>
-        <li class="topnav__item"><a class="_sub" href="javascript:void(0)">Женские</a>
-        </li>
-        <li class="topnav__item"><a class="_sub _active" href="javascript:void(0)">Мужские</a>
-          <ul class="topnav__submenu">
-            <li><a href="javascript:void(0)"><img src="./assets/images/uggi/uggi_01.png">Мужские короткие угги</a></li>
-            <li><a href="javascript:void(0)"><img src="./assets/images/uggi/uggi_01.png">Мужские Мини угги</a></li>
-            <li><a href="javascript:void(0)"><img src="./assets/images/uggi/uggi_01.png">Мужские кожаные ботинки</a></li>
-            <li><a href="javascript:void(0)"><img src="./assets/images/uggi/uggi_01.png">Мужские ботинки угги</a></li>
-            <li><a href="javascript:void(0)"><img src="./assets/images/uggi/uggi_01.png">Мужские мокасины угги</a></li>
-            <li><a href="javascript:void(0)"><img src="./assets/images/uggi/uggi_02.png">Мужские короткие угги</a></li>
-            <li><a href="javascript:void(0)"><img src="./assets/images/uggi/uggi_02.png">Мужские Мини угги</a></li>
-            <li><a href="javascript:void(0)"><img src="./assets/images/uggi/uggi_02.png">Мужские кожаные ботинки</a></li>
-            <li><a href="javascript:void(0)"><img src="./assets/images/uggi/uggi_02.png">Мужские ботинки угги</a></li>
-            <li><a href="javascript:void(0)"><img src="./assets/images/uggi/uggi_02.png">Мужские мокасины угги</a></li>
-          </ul>
-        </li>
-        <li class="topnav__item"><a class="_sub" href="javascript:void(0)">Детские</a>
-        </li>
-        <li class="topnav__item"><a href="javascript:void(0)">Выбор размера</a>
-        </li>
-        <li class="topnav__item"><a href="javascript:void(0)">Контакты</a>
-        </li>
-        <li class="topnav__item"><a href="javascript:void(0)">Блог</a>
-        </li>
-        <li class="topnav__time">
-          <div>Время работы:</div>
-          <div>c 9:00 до 20:00</div>
-        </li>
-        <li class="topnav__callback"><a href="javascript:void(0)">Заказать звонок</a></li>
-      </ul>
-      <div class="slider">
-        <div class="slider__main js-slider-main">
-          <div class="slider__main-item"><img src="./assets/images/slider/slider-1.jpg" title=""></div>
-          <div class="slider__main-item"><img src="./assets/images/slider/slider-1.jpg" title=""></div>
-          <div class="slider__main-item"><img src="./assets/images/slider/slider-1.jpg" title=""></div>
-        </div>
-      </div>
-      <ul class="img-cat">
-        <li class="img-cat__item"><a class="img-cat__link" href="javascript:void(0)">
-            <div class="img-cat__title">Женские</div><img class="img-cat__img" src="./assets/images/category-woman.jpg" alt=""></a></li>
-        <li class="img-cat__item"><a class="img-cat__link" href="javascript:void(0)">
-            <div class="img-cat__title">Мужские</div><img class="img-cat__img" src="./assets/images/category-man.jpg" alt=""></a></li>
-        <li class="img-cat__item"><a class="img-cat__link" href="javascript:void(0)">
-            <div class="img-cat__title">Детские</div><img class="img-cat__img" src="./assets/images/category-kid.jpg" alt=""></a></li>
-      </ul>
-      <div class="bestseller">
-        <div class="bestseller__title"><span>Самые популярные</span></div>
-        <ul class="products-list">
-          <li class="products-list__item">
-            <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-            <div class="products-list__info"><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-              <div class="products-list__color">Metallic Black</div>
-              <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-            </div>
-            <div class="products-list__over">
-              <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-              <div class="products-list__info"><a class="products-list__btn" href="javascript:void(0)">ПОДРОБНЕЕ</a><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-                <div class="products-list__color">Metallic Black</div>
-                <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-              </div>
-            </div>
-          </li>
-          <li class="products-list__item">
-            <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-            <div class="products-list__info"><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-              <div class="products-list__color">Metallic Black</div>
-              <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-            </div>
-            <div class="products-list__over">
-              <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-              <div class="products-list__info"><a class="products-list__btn" href="javascript:void(0)">ПОДРОБНЕЕ</a><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-                <div class="products-list__color">Metallic Black</div>
-                <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-              </div>
-            </div>
-          </li>
-          <li class="products-list__item">
-            <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-            <div class="products-list__info"><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-              <div class="products-list__color">Metallic Black</div>
-              <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-            </div>
-            <div class="products-list__over">
-              <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-              <div class="products-list__info"><a class="products-list__btn" href="javascript:void(0)">ПОДРОБНЕЕ</a><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-                <div class="products-list__color">Metallic Black</div>
-                <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-              </div>
-            </div>
-          </li>
-          <li class="products-list__item">
-            <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-            <div class="products-list__info"><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-              <div class="products-list__color">Metallic Black</div>
-              <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-            </div>
-            <div class="products-list__over">
-              <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-              <div class="products-list__info"><a class="products-list__btn" href="javascript:void(0)">ПОДРОБНЕЕ</a><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-                <div class="products-list__color">Metallic Black</div>
-                <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-              </div>
-            </div>
-          </li>
-          <li class="products-list__item">
-            <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-            <div class="products-list__info"><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-              <div class="products-list__color">Metallic Black</div>
-              <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-            </div>
-            <div class="products-list__over">
-              <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-              <div class="products-list__info"><a class="products-list__btn" href="javascript:void(0)">ПОДРОБНЕЕ</a><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-                <div class="products-list__color">Metallic Black</div>
-                <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-              </div>
-            </div>
-          </li>
-          <li class="products-list__item">
-            <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-            <div class="products-list__info"><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-              <div class="products-list__color">Metallic Black</div>
-              <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-            </div>
-            <div class="products-list__over">
-              <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-              <div class="products-list__info"><a class="products-list__btn" href="javascript:void(0)">ПОДРОБНЕЕ</a><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-                <div class="products-list__color">Metallic Black</div>
-                <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-              </div>
-            </div>
-          </li>
-          <li class="products-list__item">
-            <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-            <div class="products-list__info"><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-              <div class="products-list__color">Metallic Black</div>
-              <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-            </div>
-            <div class="products-list__over">
-              <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-              <div class="products-list__info"><a class="products-list__btn" href="javascript:void(0)">ПОДРОБНЕЕ</a><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-                <div class="products-list__color">Metallic Black</div>
-                <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-              </div>
-            </div>
-          </li>
-          <li class="products-list__item">
-            <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-            <div class="products-list__info"><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-              <div class="products-list__color">Metallic Black</div>
-              <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-            </div>
-            <div class="products-list__over">
-              <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-              <div class="products-list__info"><a class="products-list__btn" href="javascript:void(0)">ПОДРОБНЕЕ</a><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-                <div class="products-list__color">Metallic Black</div>
-                <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-              </div>
-            </div>
-          </li>
-          <li class="products-list__item">
-            <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-            <div class="products-list__info"><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-              <div class="products-list__color">Metallic Black</div>
-              <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-            </div>
-            <div class="products-list__over">
-              <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-              <div class="products-list__info"><a class="products-list__btn" href="javascript:void(0)">ПОДРОБНЕЕ</a><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-                <div class="products-list__color">Metallic Black</div>
-                <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-              </div>
-            </div>
-          </li>
-          <li class="products-list__item">
-            <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-            <div class="products-list__info"><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-              <div class="products-list__color">Metallic Black</div>
-              <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-            </div>
-            <div class="products-list__over">
-              <div class="products-list__img"><a href="javascript:void(0)"><img src="./assets/images/catalog/prod-01.jpg"></a></div>
-              <div class="products-list__info"><a class="products-list__btn" href="javascript:void(0)">ПОДРОБНЕЕ</a><a class="products-list__name" href="javascript:void(0)">Женские Угги Bailey Button Triplet</a>
-                <div class="products-list__color">Metallic Black</div>
-                <div><span class="products-list__price _new">7800<span>руб.</span></span><span class="products-list__price _old">21190 руб.</span></div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="container">
-        <h1 class="title-h1">UGG Australia официальный сайт «UGGI-Official.ru»</h1>
-        <p class="text">Популярность такой обуви растет с каждым днем. Удивительные сапожки являются очень мягкими, удобными, сохраняют тепло. Эти милые сапоги из Австралии очень универсальны – они одинаково хорошо подходят женщинам, мужчинам, детям. В основном, разные модели: мужские, женские и детские, отличает лишь размер. Сапоги очень удобны, они надежно защищены от скольжения по гололеду, ведь специальная полоска EVA на подошве сапожек призвана помогать сохранять равновесие на льду. Этот фасон прочно закрепился на модном пьедестале, знаменитости, как отечественные, так и зарубежные, уже давно обратили внимание на эту чудную обувь. Наш официальный сайт UGG Australia предлагает вам широкий выбор обуви от фирмы UGG Australia из Австралии, родины этих сапожек. Стоит помнить, что для того, чтоб избежать разочарования в покупке, нужно быть на сто процентов уверенным в том, что вы получите фирменную обувь, а не подделку, созданную в подвале, но проданную вам по баснословной цене.</p>
-        <div class="block-cut">
-          <input class="block-cut__toggle" id="block_1" type="radio" name="block-cut">
-          <label class="block-cut__title" for="block_1">Читать далее</label>
-          <div class="block-cut__content">
-            <h2 class="title-h2">UGG официальный сайт в России - UGG Australia</h2>
-            <p class="text">Высота сапог варьируется от длины «по щиколотку» и до колена. Для зимы, в которой очень много снега, практичным является такой подбор сапожек, когда их высота доходит до середины икры и немного выше. Эта обувь просторна, в нее удобно заправлять брюки, создавая различные модные комбинации. Купить австралийские сапоги в России достаточно проблематично, очень легко нарваться на подделку, или же придется переплачивать втридорога в модных бутиках. Ugg официальный сайт в России представляет потребителям возможность приобрести брендовую и качественную обувь, представленную широким ассортиментом. Можно выбрать однотонную пару, а можно пеструю, отдать предпочтение модели классических пастельных тонов, серым, или же черным, а можно бросить вызов миру, купив обувь яркой расцветки. Фасон одинаково хорошо смотрятся с джинсами, юбками и платьями. Красивым является сочетание таких сапожек и мехового жилета.</p>
-            <h2 class="title-h2">UGG com официальный сайт.</h2>
-            <p class="text">
-              Только на ugg com официальный сайт можно приобрести обувь из Австралии. Ресурс порадует вас выгодными условиями. Он предоставляет быструю доставку в любую точку России и стран Содружества Независимых Государств (СНГ), радует интересными скидками и уникальными предложениями, а жители Москвы могут получить пару в тот же день, при этом доставка для них совершенно бесплатна!<br>UGG Australia официальный сайт в России - Уги официальный сайт<br>Купить Угги на официальном сайте, где можно заказать чудесную обувь с гарантией качества. Всегда можно вернуть товар, который не подошел, в соответствии с Законом «О защите прав потребителя». Сайт гарантирует, что вся продукция будет качественной, вы не пожалеете денег, потраченных на угги, которые являются одними из лидеров на рынке зимней обуви. Идеальные для детей, подростков, молодых модников и модниц, а также для людей постарше, сапожки послужат долгие годы. Качественные изделия от производителя подарят вам комфорт в течение дня, защиту от зимних морозов, в них очень легко проходить весь день и избежать при этом усталости в ногах, натертостей. На нашем сайте вы можете совершить приятную покупку, подобрать настоящие ботинки из Австралии для всей семьи, не вставая с места и не выходя из дома. Очень тяжело вытащить своих родных на шоппинг, особенно тяжело подбирать обувь детишкам, ведь они устают и капризничают, настроение у всех портится, а итоге покупается та обувь, которая не подходит ребенку, или же приходится уходить без покупки вовсе. На нашем сайте специально для этого есть услуга примерки обуви.<br>Совершайте покупки именно у нас, тогда вы непременно будете довольны каждым своим приобретением!</p>
-          </div>
-        </div>
-      </div>
-      <div class="social"><a class="social__link" href="javascript:void(0)"><img src="./assets/images/social/icon-tumblr.svg"></a><a class="social__link" href="javascript:void(0)"><img src="./assets/images/social/icon-vimeo.svg"></a><a class="social__link" href="javascript:void(0)"><img src="./assets/images/social/icon-instagram.svg"></a><a class="social__link" href="javascript:void(0)"><img src="./assets/images/social/icon-twitter.svg"></a><a class="social__link" href="javascript:void(0)"><img src="./assets/images/social/icon-pinterest.svg"></a><a class="social__link" href="javascript:void(0)"><img src="./assets/images/social/icon-facebook.svg"></a></div>
-      <div class="footer">
-        <div class="footer__container">
-          <div class="footer__section">
-            <input class="footer__toggle" id="section_1" type="checkbox" name="footer">
-            <label class="footer__title" for="section_1">Каталог</label>
-            <ul class="footer__menu">
-              <li class="footer__item"><a class="footer__link" href="javascript:void(0)">Женские Угги</a></li>
-              <li class="footer__item"><a class="footer__link" href="javascript:void(0)">Мужские Угги</a></li>
-              <li class="footer__item"><a class="footer__link" href="javascript:void(0)">Детские Угги</a></li>
-              <li class="footer__item"><a class="footer__link" href="javascript:void(0)">Аксессуары</a></li>
-            </ul>
-          </div>
-          <div class="footer__section">
-            <input class="footer__toggle" id="section_2" type="checkbox" name="footer">
-            <label class="footer__title" for="section_2">Разделы</label>
-            <ul class="footer__menu">
-              <li class="footer__item"><a class="footer__link" href="javascript:void(0)">Выбор размера</a></li>
-              <li class="footer__item"><a class="footer__link" href="javascript:void(0)">Угги оптом</a></li>
-              <li class="footer__item"><a class="footer__link" href="javascript:void(0)">Контакты</a></li>
-              <li class="footer__item"><a class="footer__link" href="javascript:void(0)">Блог</a></li>
-            </ul>
-          </div>
-          <div class="footer__section">
-            <input class="footer__toggle" id="section_3" type="checkbox" name="footer">
-            <label class="footer__title" for="section_3">Контакты</label>
-            <ul class="footer__menu">
-              <li class="footer__item"><a class="footer__link" href="tel:8-800-333-2761">8 (800) 333-27-61</a></li>
-              <li class="footer__item"><a class="footer__link" href="mailto:info@uggi-official.ru">info@uggi-official.ru</a></li>
-              <li class="footer__item"><a class="footer__link" href="http://uggi-official.ru">uggi-official.ru</a></li>
-              <li class="footer__item">
-                <div class="footer__link">г. Красногорск, ул. Международная, 12</div>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__section _down">
-            <div class="footer__made">Сайт разработан</div>
-          </div>
-        </div>
-      </div>
-      <div class="overlay js-overlay"></div>
-    </div>
-  </body>
-  <script src="./js/vendor/jquery-3.1.0.min.js"></script>
-  <script src="./js/vendor/flickity.pkgd.min.js"></script>
-  <script src="./js/vendor/select2.min.js"></script>
-  <script src="./js/vendor/nouislider.min.js"></script>
-  <script src="./js/main.js"></script>
-  <script>
-    // Slider Main Page
-    $('.js-slider-main').flickity({
-      prevNextButtons: false,
-      pageDots: false
-    });
-  </script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convert PSD to HTML for uggi-official.ru</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet">
+
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 60px;
+      color: #252a35;
+      background-color: #f4f4f4;
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+      font-weight: 300;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      padding: 5px 0;
+    }
+    a {
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Convert PSD to HTML for uggi-official.ru</h1>
+  <ul>
+    <li>
+      <a href="./main.html">Main</a>
+    </li>
+    <li>
+      <a href="./blog.html">Blog</a>
+    </li>
+    <li>
+      <a href="./catalog.html">Catalog</a>
+    </li>
+    <li>
+      <a href="./product.html">Product</a>
+    </li>
+    <li>
+      <a href="./order.html">Order</a>
+    </li>
+  </ul>
+
+</body>
 </html>
