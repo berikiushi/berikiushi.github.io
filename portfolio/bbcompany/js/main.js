@@ -10,33 +10,68 @@ $(document).ready(function () {
 
   $('.js-subnav-toggle').click(function () {
     $(this).toggleClass('mobile-nav__link--active');
-    $('.js-subnav').slideToggle(300);
+    $(this).next('.js-subnav').slideToggle(300);
   });
 
 
   // Slider Hero
   var $heroSlider = $('.js-main-slider').flickity({
+    imagesLoaded: true,
     prevNextButtons: false,
-    contain: true
+    contain: true,
+    autoPlay: true,
+    selectedAttraction: 0.020, //default 0.025
+    friction: 0.2 //default 0.28
   });
 
 
   // Package Toggle
-  $('.js-packaging-btn-tablets').click(function (e) {
+  var isToggleInteraction = false;
+  var isPackageActive = 'blister';
+  var $tabletsBtn = $('.js-packaging-btn-tablets');
+  var $blisterBtn = $('.js-packaging-btn-blister')
+  var $tabletsContent = $('.js-packaging-tablets');
+  var $blisterContent = $('.js-packaging-blister');
+
+  $tabletsBtn.click(function (e) {
     e.preventDefault();
-    $('.js-packaging-btn-blister').removeClass('btn--active');
-    $(this).addClass('btn--active');
-    $('.js-packaging-blister').fadeOut();
-    $('.js-packaging-tablets').fadeIn();
+    isToggleInteraction = true;
+    packageToggle('tablets');
+  });
+  $blisterBtn.click(function (e) {
+    e.preventDefault();
+    isToggleInteraction = true;
+    packageToggle('blister');
   });
 
-  $('.js-packaging-btn-blister').click(function (e) {
-    e.preventDefault();
-    $('.js-packaging-btn-tablets').removeClass('btn--active');
-    $(this).addClass('btn--active');
-    $('.js-packaging-tablets').fadeOut();
-    $('.js-packaging-blister').fadeIn();
-  });
+  function packageToggle (el) {
+    if (el && el === 'tablets') {
+      isPackageActive = 'tablets';
+      $blisterBtn.removeClass('btn--active');
+      $tabletsBtn.addClass('btn--active');
+      $blisterContent.fadeOut();
+      $tabletsContent.fadeIn();
+    } else if (el && el === 'blister') {
+      isPackageActive = 'blister';
+      $tabletsBtn.removeClass('btn--active');
+      $blisterBtn.addClass('btn--active');
+      $tabletsContent.fadeOut();
+      $blisterContent.fadeIn();
+    }
+  }
+
+  if ($tabletsBtn.length) {
+    setTimeout(function autoToggle() {
+      if (isToggleInteraction) return;
+
+      if (isPackageActive === 'blister') {
+        packageToggle('tablets');
+      } else if (isPackageActive === 'tablets') {
+        packageToggle('blister');
+      }
+      setTimeout(autoToggle, 5000);
+    }, 5000);
+  }
 
 
   // Pain Toggle
@@ -105,25 +140,64 @@ $(document).ready(function () {
     });
   }
 
+  $(".product-facts__radio form input[name='radio']").change(function(e){
+    $val = $(this).val();
+    $('.product-facts__faq .accordion__item').hide();
+    if($val=='') {
+      $('.product-facts__faq .accordion__item').fadeIn();
+    } else {
+      $('.product-facts__faq .accordion__item-' + $val).fadeIn();
+    }
+  });
+
 
   // Slider Product
-  if ($(window).width() < 1024) {
-    var $productSliderName = $('[data-product-slider-name]');
+  var isMobile = false;
+  var productFlkty = false;
+  var $productSlider = $('.js-product-slider');
+  var $productSliderName = $('[data-product-slider-name]');
 
-    var $productSlider = $('.js-product-slider').flickity({
+  if ($(window).width() < 1024) {
+    isMobile = true;
+
+    $productSlider.flickity({
       prevNextButtons: false,
       pageDots: false,
       cellSelector: '.product-slider__item',
       contain: true
     });
 
-    var productFlkty = $productSlider.data('flickity');
+    productFlkty = $productSlider.data('flickity');
 
-    $productSlider.on( 'select.flickity', function() {
+    $productSlider.on('select.flickity', function () {
       $productSliderName.hide();
       $($productSliderName[productFlkty.selectedIndex]).fadeIn();
     })
   }
+
+  $(window).resize(function () {
+    if ($(window).width() < 1024 && !isMobile) {
+      isMobile = true;
+
+      $productSlider.flickity({
+        prevNextButtons: false,
+        pageDots: false,
+        cellSelector: '.product-slider__item',
+        contain: true
+      });
+
+      productFlkty = $productSlider.data('flickity');
+
+      $productSlider.on('select.flickity', function () {
+        $productSliderName.hide();
+        $($productSliderName[productFlkty.selectedIndex]).fadeIn();
+      })
+    } else if ($(window).width() >= 1024 && isMobile) {
+      isMobile = false;
+      $productSlider.flickity('destroy');
+      productFlkty = false;
+    }
+  });
 
 
   // Accordion Products
@@ -139,5 +213,56 @@ $(document).ready(function () {
       $($productAccordionContent[i]).slideToggle(300);
     });
   }
+
+
+  // Slider Mission
+  $('.js-mission-slider').css({'opacity': 1});
+  var $missionSlider = $('.js-mission-slider').flickity({
+    imagesLoaded: true,
+    prevNextButtons: false,
+    contain: true
+  });
+
+
+  // Search
+  $('.js-search-open').click(function (e) {
+    e.preventDefault();
+    $(this).hide();
+    $('.js-search').fadeIn();
+    $('.js-search-input').focus();
+  });
+  $('.js-search-input').blur(function () {
+    $('.js-search-open').fadeIn();
+    $('.js-search').fadeOut();
+  });
+
+  $('.js-locator-results-btn').click(function (e) {
+    e.preventDefault();
+    $('.js-locator-results').toggle();
+  });
+
+
+  // Accordion
+  $('.js-accordion .accordion__control').click(function () {
+    $(this).toggleClass('accordion__control--active');
+    $(this).next('.accordion__content').slideToggle(300);
+  });
+
+
+  // FAQs Filter (Mobile)
+  $('.js-product-filter .product-filter__control').click(function () {
+    $(this).next('.product-filter__content').fadeIn();
+  });
+  $('.js-product-filter .product-filter__close').click(function () {
+    $(this).parent('.product-filter__content').fadeOut();
+  });
+
+
+  //faux deep linking based on fragment
+  if(window.location.hash) {
+    var hash = window.location.hash.substring(1);
+    $("a[data-fragment='" + hash + "']").click();
+  }
+
 
 });
