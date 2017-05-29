@@ -128,7 +128,7 @@ $(document).ready(function () {
 
   for (let i = 0; i < $productFactsControl.length; i++) {
     $($productFactsControl[i]).click(function (e) {
-      e.preventDefault();
+      // e.preventDefault();
 
       $($productSelectorControl[i]).closest('.product-facts-wrapper').find($productFactsControl).hide();
 
@@ -264,5 +264,13 @@ $(document).ready(function () {
     $("a[data-fragment='" + hash + "']").click();
   }
 
-
+  if ("onhashchange" in window) { // event supported?
+    window.onhashchange = function () {
+      var hash = window.location.hash.substring(1);
+      var link = $("a[data-fragment='" + hash + "']");
+      if(!link.hasClass('product-facts__link--active')) {
+        $("a[data-fragment='" + hash + "']").click();
+      }
+    }
+  }
 });
