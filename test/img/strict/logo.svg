@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="37" viewBox="0 0 34 37"><defs><path id="a" d="M252 65V50h15v15z"/><path id="b" d="M271 49V34h15v15z"/><path id="c" d="M271 68V53h15v15z"/><path id="d" d="M252 46V31h15v15z"/></defs><desc>Generated with Avocode.</desc><g transform="translate(-252 -31)"><use fill="#2d3950" xlink:href="#a"/></g><g transform="translate(-252 -31)"><use fill="#2d3950" xlink:href="#b"/></g><g transform="translate(-252 -31)"><use fill="#15a4fa" xlink:href="#c"/></g><g transform="translate(-252 -31)"><use fill="#15a4fa" xlink:href="#d"/></g></svg>
+<svg width="34" height="37" viewBox="0 0 34 37" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="a" d="M252 65V50h15v15z"/>
+    <path id="b" d="M271 49V34h15v15z"/>
+    <path id="c" d="M271 68V53h15v15z"/>
+    <path id="d" d="M252 46V31h15v15z"/>
+  </defs>
+  <g transform="translate(-252 -31)">
+    <path id="" d="M252 65V50h15v15z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(45, 57, 80);"/>
+  </g>
+  <g transform="translate(-252 -31)">
+    <path id="" d="M271 49V34h15v15z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(45, 57, 80);"/>
+  </g>
+  <g transform="translate(-252 -31)">
+    <path id="" d="M271 68V53h15v15z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(21, 164, 250);"/>
+  </g>
+  <g transform="translate(-252 -31)">
+    <path id="" d="M252 46V31h15v15z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(21, 164, 250);"/>
+  </g>
+</svg>
