@@ -1,1 +1,1 @@
-[portfolio](berikiushi.github.io/portfolio)
+[portfolio](https://berikiushi.github.io/portfolio/)
